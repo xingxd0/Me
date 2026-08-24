@@ -1,0 +1,197 @@
+import { PortfolioContent } from './model';
+
+export const defaultPortfolioContent: PortfolioContent = {
+  siteProfile: {
+    name: 'XUDONG XING',
+    title: 'Product Design Lead & Jury Member',
+    blurb:
+      'Crafting global platform governance, AI design systems, and award-winning digital experiences. Serving as an international design jury member with 11+ years of leadership.',
+    heroImage: '/gallery/Avatar.png',
+    intro:
+      'I design systems that bridge the gap between human intuition and digital logic. With over 11 years of leadership in product design, I focus on crafting scalable platform governance, AI design ecosystems, and award-winning digital experiences.',
+  },
+  homePage: {
+    eyebrow: 'Manifesto & Experience',
+    title: 'Profile',
+    metaCode: 'BIO_24',
+    metaLabel: 'Overview',
+  },
+  aboutPage: {
+    eyebrow: 'Featured Projects',
+    title: 'Portfolio',
+    metaCode: 'JURY DOSSIER & PORTFOLIO_26',
+    metaLabel: 'Vol. 012',
+  },
+  heroLinks: [
+    {
+      label: 'LinkedIn',
+      href: 'https://linkedin.com/in/xingxd',
+      value: 'LinkedIn',
+    },
+    {
+      label: 'Patents',
+      value: '11 Granted Invention Patents',
+    },
+    {
+      label: 'Email',
+      href: 'mailto:xingxd0@gmail.com',
+      value: 'xingxd0@gmail.com',
+    },
+  ],
+  experiences: [
+    {
+      period: '2024 — Present',
+      company: 'TikTok',
+      location: 'San Jose, CA',
+      role: 'Product Design Lead',
+      description:
+        'Platform Governance & AI Design Ecosystems. Leading platform governance across 17 business lines, optimizing cross-continental operational efficiency and digital workflows.',
+    },
+    {
+      period: '2021 — 2024',
+      company: 'Kuaishou',
+      location: 'Beijing',
+      role: 'Design Manager / Lead',
+      description:
+        'Led the core interaction design team, driving innovative product experiences and establishing design language systems.',
+    },
+    {
+      period: '2018 — 2021',
+      company: 'ByteDance / 58.com',
+      location: 'Beijing',
+      role: 'Senior Product Designer',
+      description: 'Crafted digital experiences and human-computer interactions for global platforms.',
+    },
+  ],
+  awards: [
+    { year: '2026', title: 'iF DESIGN AWARD (Dual Winner)', category: 'Product Design' },
+    { year: '2025', title: 'Red Dot Design Award', category: 'Laureate' },
+    { year: '2024', title: 'MUSE Design Awards', category: 'Gold Winner' },
+    { year: 'Active', title: "A' Design Award & Competition", category: 'Grand Award Jury Member' },
+    { year: 'Granted', title: '11 Invention Patents', category: 'Advanced HCI and AR interactions' },
+  ],
+  footerInfo: {
+    locationLabel: 'Location',
+    locationValue: 'San Jose, California',
+    connectLabel: 'Connect',
+    connectValue: 'xingxd0@gmail.com',
+    connectHref: 'mailto:xingxd0@gmail.com',
+    timeLabel: 'Local Time',
+    timeValue: '22:15:08 CST',
+  },
+  works: [
+    {
+      id: '1',
+      title: 'GLOBAL AI DESIGN SYSTEM & PLATFORM GOVERNANCE',
+      category: 'Platform Governance',
+      year: '2026',
+      imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
+      description:
+        'Leading platform governance and AI design ecosystems across 17 business lines at TikTok San Jose, optimizing cross-continental operational efficiency and digital workflows.',
+      client: 'TikTok (San Jose)',
+      role: 'Product Design Lead',
+      blocks: [
+        {
+          id: '1-heading-1',
+          type: 'heading',
+          content: 'Designing a unified AI platform ecosystem',
+        },
+        {
+          id: '1-paragraph-1',
+          type: 'paragraph',
+          content:
+            'As a Product Design Lead at TikTok, the primary challenge was aligning cross-continental operational efficiency. We developed a robust AI Design System to unify 17 independent business lines under a single architectural framework.',
+        },
+        {
+          id: '1-image-1',
+          type: 'image',
+          url: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2000&auto=format&fit=crop',
+          caption: 'Platform governance and design system rollout.',
+        },
+        {
+          id: '1-quote-1',
+          type: 'quote',
+          content: 'The system reduced handoff cost while preserving brand consistency at scale.',
+        },
+        {
+          id: '1-paragraph-2',
+          type: 'paragraph',
+          content:
+            'The new system significantly reduced design-to-development handoff time, ensuring brand consistency while scaling complex internal and external tools globally. The ecosystem focuses on accessibility, predictive UI patterns, and scalable modularity.',
+        },
+      ],
+    },
+    {
+      id: '2',
+      title: 'INTERNATIONAL DESIGN AWARDS & JURY MEMBERSHIP',
+      category: 'Awards & Judging',
+      year: '2025-2026',
+      imageUrl: 'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2067&auto=format&fit=crop',
+      description:
+        'Dual winner of the 2026 iF DESIGN AWARD and 2025 Red Dot Laureate. Active Grand Award Jury Member for international design competitions, evaluating human-computer interaction and digital products.',
+      client: "iF, Red Dot, A' Design Award",
+      role: 'Jury Member & Laureate',
+      blocks: [
+        {
+          id: '2-heading-1',
+          type: 'heading',
+          content: 'Recognition through global design evaluation',
+        },
+        {
+          id: '2-paragraph-1',
+          type: 'paragraph',
+          content:
+            'Recognized for exceptional contributions to digital product design and human-computer interaction. The dual iF DESIGN AWARDS highlight a commitment to solving complex user problems through elegant, intuitive interfaces.',
+        },
+        {
+          id: '2-image-1',
+          type: 'image',
+          url: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=2000&auto=format&fit=crop',
+          caption: 'Award showcase and jury review process.',
+        },
+        {
+          id: '2-paragraph-2',
+          type: 'paragraph',
+          content:
+            'Currently serving as a Grand Award Jury Member, responsible for evaluating global submissions on criteria including innovation, functional logic, and aesthetic execution.',
+        },
+      ],
+    },
+    {
+      id: '3',
+      title: 'KUAISHOU SOCIAL COMMERCE EXPERIENCE',
+      category: 'Digital Experience',
+      year: '2023',
+      imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop',
+      description:
+        'Led the core interaction design team, driving innovative product experiences and establishing design language systems for millions of active users.',
+      client: 'Kuaishou (Beijing)',
+      role: 'Design Manager',
+      blocks: [
+        {
+          id: '3-heading-1',
+          type: 'heading',
+          content: 'Reframing social commerce through interaction design',
+        },
+        {
+          id: '3-paragraph-1',
+          type: 'paragraph',
+          content:
+            'Directed the foundational overhaul of the core interaction paradigms, blending short-video discovery with seamless social commerce integration.',
+        },
+        {
+          id: '3-video-1',
+          type: 'video',
+          url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+          caption: 'Interaction concept demo placeholder.',
+        },
+        {
+          id: '3-paragraph-2',
+          type: 'paragraph',
+          content:
+            'The initiative resulted in a new design language system that brought visual harmony and interaction consistency to a highly diverse global user base.',
+        },
+      ],
+    },
+  ],
+};

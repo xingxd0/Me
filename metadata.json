@@ -1,0 +1,6 @@
+{
+  "name": "Minimalist Designer Portfolio",
+  "description": "A responsive, fluid portfolio for a designer showcasing a minimalist aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
