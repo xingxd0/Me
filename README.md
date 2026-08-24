@@ -5,7 +5,7 @@
 - 前台展示页：`Home`、`About Work`、作品详情页
 - 本地后台：`/admin`，用于维护首页信息、作品列表和详情内容
 - 静态发布内容：通过导出 JSON 和本地图库文件进行最终发布
-- GitHub Pages 部署：推送到 `main` 后自动构建并发布
+- Vercel 部署：连接 GitHub 仓库后自动构建并发布
 
 ## 技术栈
 
@@ -34,12 +34,12 @@ npm run dev
 1. 打开页面
 
 - 前台首页：`http://localhost:3000/`
-- 后台编辑：`http://localhost:3000/#/admin`
+- 后台编辑：`http://localhost:3000/admin`
 
 ## 内容维护流程
 
 1. 将图片放入 `public/gallery/`
-1. 在后台 `#/admin` 编辑首页信息、作品列表和文章内容
+1. 在后台 `/admin` 编辑首页信息、作品列表和文章内容
 1. 图片路径填写站点路径，例如：`/gallery/Avatar.png`
 1. 后台保存后会先写入本地草稿
 1. 导出发布文件后，用导出的 JSON 覆盖 `public/content/portfolio-content.json`
@@ -69,9 +69,14 @@ npm run preview
 
 ## 部署说明
 
-- 项目已配置 GitHub Pages 工作流：`.github/workflows/deploy.yml`
-- 生产环境使用仓库子路径 `'/Me/'`
-- 路由使用 `HashRouter`，避免 GitHub Pages 刷新子路由时出现 `404`
+- 项目已适配 Vercel 部署，默认根路径为 `'/'`
+- 路由已切换为 `BrowserRouter`
+- `vercel.json` 已配置 SPA rewrites，支持刷新 `/work`、`/work/:id`、`/admin`
+- Vercel 推荐构建配置：
+  - Framework Preset: `Vite`
+  - Build Command: `npm run build`
+  - Output Directory: `dist`
+  - Install Command: `npm install`
 
 ## 发布建议
 
