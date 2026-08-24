@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Link, useParams } from 'react-router-dom';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
 import { WorkContentBlock } from '../../portfolio/content/model';
+import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
 import { SiteFooter } from './SiteFooter';
 
 function renderBlock(block: WorkContentBlock, index: number, workTitle: string) {
@@ -34,7 +35,7 @@ function renderBlock(block: WorkContentBlock, index: number, workTitle: string) 
         <motion.figure key={block.id} {...baseMotionProps} className="space-y-4">
           <div className="w-full overflow-hidden bg-gray-100 shadow-lg">
             <img
-              src={block.url}
+              src={resolveAssetUrl(block.url)}
               alt={block.caption || workTitle}
               className="h-full max-h-[720px] w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
             />
@@ -135,7 +136,7 @@ export function ProjectDetail() {
           className="mb-16 aspect-[16/9] w-full overflow-hidden bg-gray-100 shadow-lg md:aspect-[21/9]"
         >
           <img
-            src={work.imageUrl}
+            src={resolveAssetUrl(work.imageUrl)}
             alt={work.title}
             className="h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
           />

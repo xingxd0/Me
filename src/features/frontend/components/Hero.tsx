@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
+import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
 
 export function Hero() {
   const { content } = usePortfolioContent();
@@ -15,7 +16,7 @@ export function Hero() {
       <div>
         <div className="mb-8 overflow-hidden bg-gray-100">
           <img
-            src={siteProfile.heroImage}
+            src={resolveAssetUrl(siteProfile.heroImage)}
             alt={siteProfile.name}
             className="h-auto w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
           />

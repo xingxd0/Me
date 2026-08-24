@@ -6,6 +6,7 @@ import {
   stringifyPortfolioContent,
 } from '../../portfolio/content/normalizePortfolioContent';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
+import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
 import {
   Award,
   Experience,
@@ -231,7 +232,7 @@ export function AdminDashboard() {
 
   const handleExport = () => {
     downloadContentFile(draft);
-    setMessage(`已导出发布文件。请将下载的 JSON 覆盖到 ${PUBLISHED_CONTENT_PATH} 后再提交到 Git。`);
+    setMessage('已导出发布文件。请将下载的 JSON 覆盖到 public/content/portfolio-content.json 后再提交到 Git。');
   };
 
   const handleImport = async (event: ChangeEvent<HTMLInputElement>) => {
@@ -1053,7 +1054,11 @@ export function AdminDashboard() {
                     <div className="space-y-4">
                       <div className="overflow-hidden bg-gray-100">
                         {selectedWork.imageUrl ? (
-                          <img src={selectedWork.imageUrl} alt={selectedWork.title} className="h-48 w-full object-cover grayscale" />
+                          <img
+                            src={resolveAssetUrl(selectedWork.imageUrl)}
+                            alt={selectedWork.title}
+                            className="h-48 w-full object-cover grayscale"
+                          />
                         ) : (
                           <div className="flex h-48 items-center justify-center text-sm text-gray-400">No cover image</div>
                         )}

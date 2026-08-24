@@ -1,7 +1,8 @@
 import { defaultPortfolioContent } from './defaultPortfolioContent';
 import { PortfolioContent } from './model';
+import { withBasePath } from '../../../shared/utils/assetUrl';
 
-export const PUBLISHED_CONTENT_PATH = '/content/portfolio-content.json';
+export const PUBLISHED_CONTENT_PATH = withBasePath('/content/portfolio-content.json');
 export const DRAFT_STORAGE_KEY = 'minimalist-designer-portfolio-draft-content';
 
 export function normalizePortfolioContent(raw?: Partial<PortfolioContent> | null): PortfolioContent {

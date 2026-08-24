@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
+import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
 import { SiteFooter } from './SiteFooter';
 
 export function WorkList() {
@@ -52,7 +53,7 @@ export function WorkList() {
                   <motion.img
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    src={work.imageUrl}
+                    src={resolveAssetUrl(work.imageUrl)}
                     alt={work.title}
                     className="h-full w-full object-cover opacity-90 grayscale transition-all duration-700 group-hover:opacity-100 group-hover:grayscale-0"
                   />
