@@ -70,7 +70,7 @@ npm run preview
 ## 部署说明
 
 - 项目已配置 GitHub Pages 工作流：`.github/workflows/deploy.yml`
-- 生产环境使用仓库子路径 `'/Designer-Portfolio/'`
+- 生产环境使用仓库子路径 `'/Me/'`
 - 路由使用 `HashRouter`，避免 GitHub Pages 刷新子路由时出现 `404`
 
 ## 发布建议
