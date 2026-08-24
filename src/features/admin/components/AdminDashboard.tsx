@@ -470,7 +470,7 @@ export function AdminDashboard() {
                 <Link to="/" className="border border-[#e8e8e3] px-4 py-3 text-[10px] font-bold uppercase tracking-[0.24em] text-gray-500 transition hover:border-black hover:text-black">
                   View Home
                 </Link>
-                <Link to="/about" className="border border-[#e8e8e3] px-4 py-3 text-[10px] font-bold uppercase tracking-[0.24em] text-gray-500 transition hover:border-black hover:text-black">
+                <Link to="/work" className="border border-[#e8e8e3] px-4 py-3 text-[10px] font-bold uppercase tracking-[0.24em] text-gray-500 transition hover:border-black hover:text-black">
                   View About Work
                 </Link>
               </div>

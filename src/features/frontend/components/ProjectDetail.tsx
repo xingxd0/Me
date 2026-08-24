@@ -78,7 +78,7 @@ export function ProjectDetail() {
     return (
       <div className="flex h-full flex-col items-center justify-center">
         <h2 className="text-2xl font-light">Project not found</h2>
-        <Link to="/about" className="mt-4 text-[10px] font-bold uppercase tracking-widest underline">
+        <Link to="/work" className="mt-4 text-[10px] font-bold uppercase tracking-widest underline">
           Return to Portfolio
         </Link>
       </div>
@@ -92,7 +92,7 @@ export function ProjectDetail() {
       <header className="mb-12 flex items-end justify-between">
         <div className="space-y-4">
           <Link
-            to="/about"
+            to="/work"
             className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 transition-colors hover:text-[#111111]"
           >
             ← Back to Portfolio
@@ -164,7 +164,7 @@ export function ProjectDetail() {
         leftValue={work.category}
         rightLabel="Action"
         rightValue="Return to Portfolio"
-        rightHref="/about"
+        rightHref="/work"
       />
     </section>
   );
