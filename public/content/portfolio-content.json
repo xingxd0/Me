@@ -58,29 +58,24 @@
   ],
   "awards": [
     {
+      "year": "2027",
+      "title": "Red Dot Design Award",
+      "category": "AI Solution"
+    },
+    {
       "year": "2026",
       "title": "iF DESIGN AWARD (Dual Winner)",
-      "category": "Product Design"
+      "category": "Design System & Vibe Coding"
     },
     {
       "year": "2025",
       "title": "Red Dot Design Award",
-      "category": "Laureate"
-    },
-    {
-      "year": "2024",
-      "title": "MUSE Design Awards",
-      "category": "Gold Winner"
-    },
-    {
-      "year": "Active",
-      "title": "A' Design Award & Competition",
-      "category": "Grand Award Jury Member"
+      "category": "Mental Health"
     },
     {
       "year": "Granted",
-      "title": "11 Invention Patents",
-      "category": "Advanced HCI and AR interactions"
+      "title": "National Patents 12",
+      "category": "3 Invention Patents"
     }
   ],
   "footerInfo": {

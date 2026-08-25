@@ -18,3 +18,9 @@
 - Synced all above changes in both:
   - `public/content/portfolio-content.json`
   - `src/features/portfolio/content/defaultPortfolioContent.ts`
+- Removed the homepage `footer` module from `Home.tsx`.
+- Updated the `Awards, Patents & Jury` section to:
+  - `2027` `Red Dot Design Award` / `AI Solution`
+  - `2026` `iF DESIGN AWARD (Dual Winner)` / `Design System & Vibe Coding`
+  - `2025` `Red Dot Design Award` / `Mental Health`
+  - `Granted` `National Patents 12` / `3 Invention Patents`

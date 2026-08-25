@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
 import { Hero } from './Hero';
-import { SiteFooter } from './SiteFooter';
 
 export function Home() {
   const { content } = usePortfolioContent();
@@ -101,7 +100,6 @@ export function Home() {
           </div>
         </div>
 
-        <SiteFooter />
       </section>
     </div>
   );

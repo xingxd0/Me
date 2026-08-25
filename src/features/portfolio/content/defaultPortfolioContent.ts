@@ -64,11 +64,10 @@ export const defaultPortfolioContent: PortfolioContent = {
     },
   ],
   awards: [
-    { year: '2026', title: 'iF DESIGN AWARD (Dual Winner)', category: 'Product Design' },
-    { year: '2025', title: 'Red Dot Design Award', category: 'Laureate' },
-    { year: '2024', title: 'MUSE Design Awards', category: 'Gold Winner' },
-    { year: 'Active', title: "A' Design Award & Competition", category: 'Grand Award Jury Member' },
-    { year: 'Granted', title: '11 Invention Patents', category: 'Advanced HCI and AR interactions' },
+    { year: '2027', title: 'Red Dot Design Award', category: 'AI Solution' },
+    { year: '2026', title: 'iF DESIGN AWARD (Dual Winner)', category: 'Design System & Vibe Coding' },
+    { year: '2025', title: 'Red Dot Design Award', category: 'Mental Health' },
+    { year: 'Granted', title: 'National Patents 12', category: '3 Invention Patents' },
   ],
   footerInfo: {
     locationLabel: 'Location',
