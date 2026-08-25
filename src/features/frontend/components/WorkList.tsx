@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion, useScroll, useSpring, useTransform, useVelocity } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
 import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
@@ -8,6 +8,24 @@ import { SiteFooter } from './SiteFooter';
 export function WorkList() {
   const { content } = usePortfolioContent();
   const { aboutPage, works } = content;
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const squashAmount = useTransform(scrollVelocity, (latest) => Math.min(Math.abs(latest) / 900, 0.34));
+  const imageViewportWidth = useSpring(useTransform(squashAmount, (latest) => `${100 - latest * 38}%`), {
+    stiffness: 300,
+    damping: 26,
+    mass: 0.24,
+  });
+  const imageContentScale = useSpring(useTransform(squashAmount, (latest) => 1 + latest * 0.12), {
+    stiffness: 300,
+    damping: 26,
+    mass: 0.24,
+  });
+  const imageContentY = useSpring(useTransform(squashAmount, (latest) => latest * -10), {
+    stiffness: 260,
+    damping: 24,
+    mass: 0.24,
+  });
 
   return (
     <section className="mx-auto flex h-full w-full max-w-7xl flex-col px-8 py-6 md:px-12 lg:px-20">
@@ -49,15 +67,21 @@ export function WorkList() {
                 </div>
               </div>
 
-              <div className="flex w-full flex-col gap-6 md:flex-row md:pl-20">
-                <div className="aspect-[16/9] w-full overflow-hidden shadow-lg md:w-2/3">
-                  <motion.img
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    src={resolveAssetUrl(work.imageUrl)}
-                    alt={work.title}
-                    className="h-full w-full object-cover opacity-90 grayscale transition-all duration-700 group-hover:opacity-100 group-hover:grayscale-0"
-                  />
+              <div className="flex w-full flex-col gap-6 md:flex-row md:pl-32">
+                <div className="aspect-[16/9] w-full md:w-2/3">
+                  <motion.div
+                    style={{ width: imageViewportWidth }}
+                    className="mx-auto h-full overflow-hidden shadow-lg will-change-[width]"
+                  >
+                    <motion.img
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                      style={{ scale: imageContentScale, y: imageContentY }}
+                      src={resolveAssetUrl(work.imageUrl)}
+                      alt={work.title}
+                      className="h-full w-full object-cover opacity-90 grayscale transition-all duration-700 group-hover:opacity-100 group-hover:grayscale-0"
+                    />
+                  </motion.div>
                 </div>
                 <div className="flex w-full flex-col justify-end space-y-4 pb-2 md:w-1/3">
                   <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">

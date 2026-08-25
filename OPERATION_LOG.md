@@ -24,3 +24,8 @@
   - `2026` `iF DESIGN AWARD (Dual Winner)` / `Design System & Vibe Coding`
   - `2025` `Red Dot Design Award` / `Mental Health`
   - `Granted` `National Patents 12` / `3 Invention Patents`
+- Restored the top-right navigation `LinkedIn` entry with a fallback external profile link in `TopNav.tsx`.
+- Refined the `About Work` page interactions and layout:
+  - Added scroll-velocity-driven image narrowing with elastic recovery in `WorkList.tsx`.
+  - Aligned project titles with the image left edge.
+- Renamed the homepage awards heading from `Awards, Patents & Jury` to `Awards, Patents`.

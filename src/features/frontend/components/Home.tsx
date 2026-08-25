@@ -73,7 +73,7 @@ export function Home() {
 
           <div className="py-12">
             <h4 className="mb-8 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
-              Awards, Patents & Jury
+              Awards, Patents
             </h4>
             <div className="flex flex-col">
               {awards.map((award, index) => (
@@ -83,9 +83,9 @@ export function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="group -mx-4 flex cursor-default flex-col items-start gap-4 border-b border-gray-50 px-4 py-6 transition-all last:border-0 hover:bg-gray-50 md:flex-row md:items-center md:gap-8"
+                  className="group -mx-4 flex cursor-default flex-col items-start gap-4 border-b border-gray-50 px-4 py-6 transition-all last:border-0 hover:bg-gray-50 md:flex-row md:items-center md:gap-6 lg:gap-8"
                 >
-                  <div className="w-full shrink-0 md:w-48">
+                  <div className="w-full shrink-0 md:w-[50px] lg:w-40">
                     <span className="block text-[10px] font-mono text-gray-400">{award.year}</span>
                   </div>
                   <div className="flex flex-1 flex-col gap-2 md:flex-row md:items-center md:justify-between">

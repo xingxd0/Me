@@ -6,7 +6,12 @@ import { navLinks } from '../../../shared/config/navigation';
 export function TopNav() {
   const { content } = usePortfolioContent();
   const { heroLinks, siteProfile } = content;
-  const externalProfileLink = heroLinks.find((item) => item.href?.startsWith('http'));
+  const externalProfileLink =
+    heroLinks.find((item) => item.href?.startsWith('http')) ??
+    {
+      label: 'LinkedIn',
+      href: 'https://linkedin.com/in/xingxd',
+    };
 
   return (
     <motion.header
