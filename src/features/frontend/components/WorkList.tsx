@@ -13,11 +13,11 @@ export function WorkList() {
   const squashAmount = useTransform(scrollVelocity, (latest) => {
     const speed = Math.abs(latest);
 
-    if (speed < 1600) {
+    if (speed < 1800) {
       return 0;
     }
 
-    return Math.min((speed - 1600) / 1800, 0.34);
+    return Math.min((speed - 1800) / 1800, 0.34);
   });
   const imageViewportWidth = useSpring(useTransform(squashAmount, (latest) => `${100 - latest * 38}%`), {
     stiffness: 300,
