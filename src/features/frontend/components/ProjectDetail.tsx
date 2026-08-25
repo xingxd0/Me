@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Link, useParams } from 'react-router-dom';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
 import { WorkContentBlock } from '../../portfolio/content/model';
+import { getWorkSlug } from '../../portfolio/content/workSlug';
 import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
 import { SiteFooter } from './SiteFooter';
 
@@ -71,8 +72,8 @@ function renderBlock(block: WorkContentBlock, index: number, workTitle: string) 
 export function ProjectDetail() {
   const { content } = usePortfolioContent();
   const { works } = content;
-  const { id } = useParams();
-  const work = works.find((item) => item.id === id);
+  const { slug } = useParams();
+  const work = works.find((item) => getWorkSlug(item) === slug || item.id === slug);
 
   if (!work) {
     return (

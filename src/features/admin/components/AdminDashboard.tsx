@@ -7,6 +7,7 @@ import {
 } from '../../portfolio/content/normalizePortfolioContent';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
 import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
+import { getWorkSlug } from '../../portfolio/content/workSlug';
 import {
   Award,
   Experience,
@@ -836,7 +837,7 @@ export function AdminDashboard() {
                           </div>
                           <div className="border-t border-[#f0f0ec] pt-5">
                             <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-gray-400">Permalink</p>
-                            <p className="mt-2 text-sm text-gray-500">{`/work/${selectedWork.id}`}</p>
+                            <p className="mt-2 text-sm text-gray-500">{`/work/${getWorkSlug(selectedWork)}`}</p>
                           </div>
                         </Panel>
 
@@ -1068,7 +1069,7 @@ export function AdminDashboard() {
                         <h4 className="mt-2 text-xl font-light tracking-tight text-[#111111]">{selectedWork.title}</h4>
                         <p className="mt-3 text-sm leading-relaxed text-gray-500">{selectedWork.description}</p>
                       </div>
-                      <Link to={`/work/${selectedWork.id}`} className="text-sm text-blue-600 underline underline-offset-4">
+                      <Link to={`/work/${getWorkSlug(selectedWork)}`} className="text-sm text-blue-600 underline underline-offset-4">
                         Preview detail page
                       </Link>
                     </div>

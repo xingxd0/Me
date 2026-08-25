@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { usePortfolioContent } from '../../portfolio/content/PortfolioContentProvider';
 import { resolveAssetUrl } from '../../../shared/utils/assetUrl';
+import { getWorkSlug } from '../../portfolio/content/workSlug';
 import { SiteFooter } from './SiteFooter';
 
 export function WorkList() {
@@ -28,7 +29,7 @@ export function WorkList() {
 
       <div className="flex flex-1 flex-col border-t border-black">
         {works.map((work) => (
-          <Link to={`/work/${work.id}`} key={work.id} className="group block">
+          <Link to={`/work/${getWorkSlug(work)}`} key={work.id} className="group block">
             <motion.article
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
