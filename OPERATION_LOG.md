@@ -39,3 +39,4 @@
 - Adjusted the scroll-driven image narrowing so only fast scrolling triggers the effect.
 - Increased the `About Work` scroll trigger threshold so image narrowing starts only when scroll speed exceeds `1600`.
 - Increased the `About Work` scroll trigger threshold again so image narrowing starts only when scroll speed exceeds `1800`.
+- Replaced the 6 `About Work` project titles, time labels, and descriptions with the latest English website copy.

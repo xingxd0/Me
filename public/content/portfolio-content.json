@@ -90,11 +90,11 @@
   "works": [
     {
       "id": "1",
-      "title": "GLOBAL AI DESIGN SYSTEM & PLATFORM GOVERNANCE",
+      "title": "Global AI Design System & Platform Governance",
       "category": "Platform Governance",
       "year": "2026",
       "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      "description": "Leading platform governance and AI design ecosystems across 17 business lines at TikTok San Jose, optimizing cross-continental operational efficiency and digital workflows.",
+      "description": "Led platform governance and AI design ecosystems across 17 business lines at TikTok San Jose. Optimized cross-continental operational efficiency and digital workflows by defining highly scalable underlying design systems and systems architecture, setting an industry benchmark for complex human-computer collaboration and enterprise digital transformation.",
       "client": "TikTok (San Jose)",
       "role": "Product Design Lead",
       "blocks": [
@@ -128,11 +128,11 @@
     },
     {
       "id": "2",
-      "title": "INTERNATIONAL DESIGN AWARDS & JURY MEMBERSHIP",
+      "title": "International Design Awards & Jury Membership",
       "category": "Awards & Judging",
-      "year": "2025-2026",
+      "year": "2025 - 2026",
       "imageUrl": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2067&auto=format&fit=crop",
-      "description": "Dual winner of the 2026 iF DESIGN AWARD and 2025 Red Dot Laureate. Active Grand Award Jury Member for international design competitions, evaluating human-computer interaction and digital products.",
+      "description": "Dual winner of the 2026 iF DESIGN AWARD and 2025 Red Dot Laureate. Serving as an active Grand Award Jury Member for international design competitions, focusing on the professional evaluation and standard-setting of human-computer interaction (HCI) and digital products.",
       "client": "iF, Red Dot, A' Design Award",
       "role": "Jury Member & Laureate",
       "blocks": [
@@ -161,11 +161,11 @@
     },
     {
       "id": "3",
-      "title": "KUAISHOU SOCIAL COMMERCE EXPERIENCE",
+      "title": "Kuaishou Social Commerce Experience",
       "category": "Digital Experience",
       "year": "2023",
       "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop",
-      "description": "Led the core interaction design team, driving innovative product experiences and establishing design language systems for millions of active users.",
+      "description": "Led the core interaction design team, driving innovative product experiences for Kuaishou's social commerce. Established rigorous design language systems (DLS) to deliver seamless and commercially viable product experiences for millions of active users.",
       "client": "Kuaishou (Beijing)",
       "role": "Design Manager",
       "blocks": [
@@ -194,11 +194,11 @@
     },
     {
       "id": "4",
-      "title": "GLOBAL CREATOR OPS CONTROL CENTER",
+      "title": "Global Creator Ops Control Center",
       "category": "Creator Platform",
       "year": "2024",
       "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2000&auto=format&fit=crop",
-      "description": "Built a unified operational workspace for creator support, campaign management, and cross-market execution across global teams.",
+      "description": "Built a unified operational workspace for global, cross-functional teams. Streamlined creator support, campaign management, and cross-market execution, significantly enhancing collaboration efficiency across distributed global teams.",
       "client": "TikTok Creator Operations",
       "role": "Design Manager",
       "blocks": [
@@ -227,11 +227,11 @@
     },
     {
       "id": "5",
-      "title": "DESIGN SYSTEM FOR ENTERPRISE OPS TOOLING",
+      "title": "Design System for Enterprise Ops Tooling",
       "category": "Design System",
       "year": "2025",
       "imageUrl": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=2000&auto=format&fit=crop",
-      "description": "Defined a scalable component and governance model for internal operations products, improving consistency across workflows and markets.",
+      "description": "Defined scalable component libraries and governance models for internal enterprise operations tooling. Standardized experience across multiple workflows and markets to systematically elevate enterprise infrastructure efficiency.",
       "client": "Internal Enterprise Platforms",
       "role": "Design Lead",
       "blocks": [
@@ -260,11 +260,11 @@
     },
     {
       "id": "6",
-      "title": "AI-ASSISTED MODERATION DASHBOARD",
+      "title": "AI-Assisted Moderation Dashboard",
       "category": "AI Workflow",
       "year": "2026",
       "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2000&auto=format&fit=crop",
-      "description": "Explored a moderation dashboard that combines AI summaries, risk signals, and human review flows for higher decision efficiency.",
+      "description": "Explored next-generation decision-making dashboards combining AI intelligent summaries, multi-dimensional risk signals, and human review workflows. Significantly elevated decision-making efficiency in high-pressure, complex scenarios through refined human-computer interaction (HCI) design.",
       "client": "Trust & Safety",
       "role": "Product Design Lead",
       "blocks": [
