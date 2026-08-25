@@ -37,3 +37,4 @@
   - Moved year text below the project title.
   - Corrected image alignment to match the title left edge.
 - Adjusted the scroll-driven image narrowing so only fast scrolling triggers the effect.
+- Increased the `About Work` scroll trigger threshold so image narrowing starts only when scroll speed exceeds `1600`.

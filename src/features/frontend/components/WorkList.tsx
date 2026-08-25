@@ -13,11 +13,11 @@ export function WorkList() {
   const squashAmount = useTransform(scrollVelocity, (latest) => {
     const speed = Math.abs(latest);
 
-    if (speed < 1400) {
+    if (speed < 1600) {
       return 0;
     }
 
-    return Math.min((speed - 1400) / 1800, 0.34);
+    return Math.min((speed - 1600) / 1800, 0.34);
   });
   const imageViewportWidth = useSpring(useTransform(squashAmount, (latest) => `${100 - latest * 38}%`), {
     stiffness: 300,
@@ -78,10 +78,10 @@ export function WorkList() {
               </div>
 
               <div className="flex w-full flex-col gap-6 md:flex-row">
-                <div className="flex aspect-[16/9] w-full justify-start md:w-2/3">
+                <div className="flex aspect-[16/9] w-full justify-center md:w-2/3">
                   <motion.div
-                    style={{ width: imageViewportWidth, transformOrigin: 'left center' }}
-                    className="h-full origin-left overflow-hidden shadow-lg will-change-[width]"
+                    style={{ width: imageViewportWidth }}
+                    className="h-full overflow-hidden shadow-lg will-change-[width]"
                   >
                     <motion.img
                       whileHover={{ scale: 1.05 }}
