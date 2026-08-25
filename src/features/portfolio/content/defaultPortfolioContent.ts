@@ -3,18 +3,18 @@ import { PortfolioContent } from './model';
 export const defaultPortfolioContent: PortfolioContent = {
   siteProfile: {
     name: 'XUDONG XING',
-    title: 'Product Design Lead & Jury Member',
+    title: 'Design manager',
     blurb:
-      'Crafting global platform governance, AI design systems, and award-winning digital experiences. Serving as an international design jury member with 11+ years of leadership.',
+      '12+ years of design leadership spanning B2B and B2C ecosystems. Expert in 0-to-1 product incubation, multi-million-dollar monetization, and enterprise platform governance across education, gaming, and creator tools. Holder of 11 patents and an international award winner (iF, Red Dot, MUSE Gold).',
     heroImage: '/gallery/Avatar.png',
     intro:
-      'I design systems that bridge the gap between human intuition and digital logic. With over 11 years of leadership in product design, I focus on crafting scalable platform governance, AI design ecosystems, and award-winning digital experiences.',
+      'I build scalable design systems grounded in logic and methodology. Beyond merely fulfilling functional requirements, my work is rooted in human nature-translating deep behavioral insights into intuitive, empathetic digital experiences.',
   },
   homePage: {
     eyebrow: 'Manifesto & Experience',
     title: 'Profile',
-    metaCode: 'BIO_24',
-    metaLabel: 'Overview',
+    metaCode: '',
+    metaLabel: '2026.9.1',
   },
   aboutPage: {
     eyebrow: 'Featured Projects',
@@ -24,13 +24,12 @@ export const defaultPortfolioContent: PortfolioContent = {
   },
   heroLinks: [
     {
-      label: 'LinkedIn',
-      href: 'https://linkedin.com/in/xingxd',
-      value: 'LinkedIn',
+      label: 'Company',
+      value: '@TikTok',
     },
     {
-      label: 'Patents',
-      value: '11 Granted Invention Patents',
+      label: 'Title',
+      value: 'Platform OPS Design manager',
     },
     {
       label: 'Email',
@@ -43,24 +42,25 @@ export const defaultPortfolioContent: PortfolioContent = {
       period: '2024 — Present',
       company: 'TikTok',
       location: 'San Jose, CA',
-      role: 'Product Design Lead',
+      role: 'Design Manager / Product Design Lead',
       description:
-        'Platform Governance & AI Design Ecosystems. Leading platform governance across 17 business lines, optimizing cross-continental operational efficiency and digital workflows.',
+        'Talent & Team Incubation: Direct talent recruitment, performance evaluations, and structured skill development to foster a high-performing design team.\n\nDesign Governance & AI Innovation: Oversee end-to-end design quality while incubating AI-driven solutions to drive patents and global design awards.\n\nOperation & Creator Ecosystems: Lead design for TikTok operational middle platforms to optimize internal workflows, while empowering global creators with intuitive tools and data insights.',
     },
     {
       period: '2021 — 2024',
       company: 'Kuaishou',
       location: 'Beijing',
-      role: 'Design Manager / Lead',
+      role: 'Design Manager',
       description:
-        'Led the core interaction design team, driving innovative product experiences and establishing design language systems.',
+        'Team Management: Directed talent recruitment, performance evaluations, and structured skill development to foster a high-performing design team across 11 business lines.\n\nBusiness Evolution: Led the integration of mobile and Web platforms, drove the version evolution of creator ecosystems and MCN systems, and spearheaded the progression of operational activity platforms alongside the 0-to-1 incubation of internal data label monitoring systems.',
     },
     {
       period: '2018 — 2021',
-      company: 'ByteDance / 58.com',
+      company: 'ByteDance',
       location: 'Beijing',
-      role: 'Senior Product Designer',
-      description: 'Crafted digital experiences and human-computer interactions for global platforms.',
+      role: 'Design Lead / Senior UX Designer',
+      description:
+        'Education Product Incubation: Led the 0-to-1 product incubation and subsequent experience optimization for adult education business lines, including OpenLanguage, K12 English, and vocabulary-building apps.\n\nCore Business Iteration: Spearheaded design system updates and experience upgrades for Toutiao, daily iterations for search and short-to-long video features, 0-to-1 mini-program incubation, and served as the interaction lead for the 2019 ByteDance Spring Festival campaign.',
     },
   ],
   awards: [

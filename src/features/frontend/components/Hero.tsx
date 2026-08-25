@@ -22,7 +22,6 @@ export function Hero() {
           />
         </div>
         <div className="space-y-5">
-          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">Profile</p>
           <div>
             <h1 className="text-4xl font-extralight tracking-tight md:text-5xl">
               {siteProfile.name}

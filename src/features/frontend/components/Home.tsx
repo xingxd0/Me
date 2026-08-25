@@ -14,8 +14,8 @@ export function Home() {
       </aside>
 
       <section className="flex h-full w-full flex-col px-8 py-6 md:w-2/3 md:px-12 lg:px-20">
-        <header className="mb-12 flex items-end justify-between">
-          <div className="space-y-2">
+        <header className="mb-8 flex items-end justify-between">
+          <div className="space-y-3">
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
               {homePage.eyebrow}
             </span>
@@ -25,7 +25,6 @@ export function Home() {
             </h2>
           </div>
           <div className="hidden text-right md:block">
-            <span className="block text-[10px] font-mono text-gray-300">{homePage.metaCode}</span>
             <span className="block text-[10px] font-mono uppercase text-gray-300">{homePage.metaLabel}</span>
           </div>
         </header>
@@ -35,7 +34,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-3xl border-b border-gray-100 py-12 md:py-20"
+            className="max-w-3xl border-b border-gray-100 py-8 md:py-12"
           >
             <h3 className="text-2xl font-light leading-relaxed tracking-tight text-[#111111] md:text-3xl">
               {siteProfile.intro}
@@ -64,7 +63,7 @@ export function Home() {
                   </div>
                   <div className="flex-1">
                     <h5 className="mb-2 text-xl font-light tracking-tight">{experience.role}</h5>
-                    <p className="max-w-xl text-sm font-medium leading-relaxed text-gray-500">
+                    <p className="max-w-xl whitespace-pre-line text-sm font-medium leading-relaxed text-gray-500">
                       {experience.description}
                     </p>
                   </div>
