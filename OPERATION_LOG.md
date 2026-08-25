@@ -29,3 +29,11 @@
   - Added scroll-velocity-driven image narrowing with elastic recovery in `WorkList.tsx`.
   - Aligned project titles with the image left edge.
 - Renamed the homepage awards heading from `Awards, Patents & Jury` to `Awards, Patents`.
+- Updated the `About Work` page header metadata:
+  - Removed `JURY DOSSIER & PORTFOLIO_26`
+  - Changed `Vol. 012` to `update 2026.9.1`
+- Expanded the `About Work` list to 6 mock projects for layout simulation.
+- Reworked the project list meta layout:
+  - Moved year text below the project title.
+  - Corrected image alignment to match the title left edge.
+- Adjusted the scroll-driven image narrowing so only fast scrolling triggers the effect.

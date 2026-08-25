@@ -15,8 +15,8 @@
   "aboutPage": {
     "eyebrow": "Featured Projects",
     "title": "Portfolio",
-    "metaCode": "JURY DOSSIER & PORTFOLIO_26",
-    "metaLabel": "Vol. 012"
+    "metaCode": "",
+    "metaLabel": "update 2026.9.1"
   },
   "heroLinks": [
     {
@@ -189,6 +189,105 @@
           "id": "3-paragraph-2",
           "type": "paragraph",
           "content": "The initiative resulted in a new design language system that brought visual harmony and interaction consistency to a highly diverse global user base."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "GLOBAL CREATOR OPS CONTROL CENTER",
+      "category": "Creator Platform",
+      "year": "2024",
+      "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2000&auto=format&fit=crop",
+      "description": "Built a unified operational workspace for creator support, campaign management, and cross-market execution across global teams.",
+      "client": "TikTok Creator Operations",
+      "role": "Design Manager",
+      "blocks": [
+        {
+          "id": "4-heading-1",
+          "type": "heading",
+          "content": "Creating one control center for global creator operations"
+        },
+        {
+          "id": "4-paragraph-1",
+          "type": "paragraph",
+          "content": "This concept project consolidates fragmented creator operations workflows into a single workspace for task routing, campaign coordination, and partner health monitoring."
+        },
+        {
+          "id": "4-image-1",
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop",
+          "caption": "Unified creator operations overview."
+        },
+        {
+          "id": "4-paragraph-2",
+          "type": "paragraph",
+          "content": "The system reduces context switching and supports global teams with clearer prioritization, modular dashboards, and faster issue resolution."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "DESIGN SYSTEM FOR ENTERPRISE OPS TOOLING",
+      "category": "Design System",
+      "year": "2025",
+      "imageUrl": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=2000&auto=format&fit=crop",
+      "description": "Defined a scalable component and governance model for internal operations products, improving consistency across workflows and markets.",
+      "client": "Internal Enterprise Platforms",
+      "role": "Design Lead",
+      "blocks": [
+        {
+          "id": "5-heading-1",
+          "type": "heading",
+          "content": "Standardizing enterprise tooling through a modular design system"
+        },
+        {
+          "id": "5-paragraph-1",
+          "type": "paragraph",
+          "content": "The project establishes a shared UI language for operations products, covering layout rules, component states, token usage, and cross-team contribution patterns."
+        },
+        {
+          "id": "5-image-1",
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=2000&auto=format&fit=crop",
+          "caption": "Systemized patterns for complex ops interfaces."
+        },
+        {
+          "id": "5-paragraph-2",
+          "type": "paragraph",
+          "content": "By unifying patterns and review rules, teams can ship faster while preserving clarity, accessibility, and design quality across business lines."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "AI-ASSISTED MODERATION DASHBOARD",
+      "category": "AI Workflow",
+      "year": "2026",
+      "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2000&auto=format&fit=crop",
+      "description": "Explored a moderation dashboard that combines AI summaries, risk signals, and human review flows for higher decision efficiency.",
+      "client": "Trust & Safety",
+      "role": "Product Design Lead",
+      "blocks": [
+        {
+          "id": "6-heading-1",
+          "type": "heading",
+          "content": "Combining AI signals with human review in one decision flow"
+        },
+        {
+          "id": "6-paragraph-1",
+          "type": "paragraph",
+          "content": "This concept focuses on helping moderation teams scan large volumes of cases through AI summaries, confidence markers, and action recommendations."
+        },
+        {
+          "id": "6-image-1",
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?q=80&w=2000&auto=format&fit=crop",
+          "caption": "AI-assisted decision support for moderation teams."
+        },
+        {
+          "id": "6-paragraph-2",
+          "type": "paragraph",
+          "content": "The interface balances speed and accountability by keeping source evidence visible while streamlining repetitive review and escalation tasks."
         }
       ]
     }
