@@ -2,7 +2,11 @@ const state = {
   cards: [],
   payload: null,
   activeTab: "knowledge",
+  flippedCards: new Set(),
+  practiceStats: {},
 };
+
+const PRACTICE_STORAGE_KEY = "phrasebook-practice-stats";
 
 const pageTitles = {
   knowledge: ["KNOWLEDGE BASE", "知识库"],
@@ -16,6 +20,7 @@ const elements = {
   workspaceEyebrow: document.querySelector("#workspaceEyebrow"),
   workspaceTitle: document.querySelector("#workspaceTitle"),
   generatedAt: document.querySelector("#generatedAt"),
+  navCardCount: document.querySelector("#navCardCount"),
   cardCount: document.querySelector("#cardCount"),
   totalOccurrences: document.querySelector("#totalOccurrences"),
   sourceCount: document.querySelector("#sourceCount"),
@@ -23,6 +28,9 @@ const elements = {
   cardList: document.querySelector("#cardList"),
   searchInput: document.querySelector("#searchInput"),
   kindFilter: document.querySelector("#kindFilter"),
+  priorityFilter: document.querySelector("#priorityFilter"),
+  proficiencyFilter: document.querySelector("#proficiencyFilter"),
+  sortSelect: document.querySelector("#sortSelect"),
   extractForm: document.querySelector("#extractForm"),
   sourceTitle: document.querySelector("#sourceTitle"),
   sourceText: document.querySelector("#sourceText"),
@@ -86,22 +94,133 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function loadPracticeStats() {
+  try {
+    state.practiceStats = JSON.parse(window.localStorage.getItem(PRACTICE_STORAGE_KEY) || "{}");
+  } catch (error) {
+    state.practiceStats = {};
+  }
+}
+
+function savePracticeStats() {
+  window.localStorage.setItem(PRACTICE_STORAGE_KEY, JSON.stringify(state.practiceStats));
+}
+
+function cardKey(card) {
+  return card.normalized_phrase || card.id || card.phrase;
+}
+
+function practiceFor(card) {
+  return state.practiceStats[cardKey(card)] || { correct: 0, wrong: 0 };
+}
+
+function accuracyFor(stats) {
+  const total = stats.correct + stats.wrong;
+  if (!total) {
+    return "未测试";
+  }
+  return `${Math.round((stats.correct / total) * 100)}%`;
+}
+
+function accuracyValue(card) {
+  const stats = practiceFor(card);
+  const total = stats.correct + stats.wrong;
+  return total ? stats.correct / total : -1;
+}
+
+function frequencyValue(card) {
+  if (card.frequency_label === "待核对") {
+    return null;
+  }
+  return Number.isFinite(Number(card.total_count)) ? Number(card.total_count) : null;
+}
+
+function priorityValue(card) {
+  const priority = card.priority || "P9";
+  const match = priority.match(/\d+/);
+  return match ? Number(match[0]) : 9;
+}
+
+function proficiencyValue(card) {
+  const proficiency = card.proficiency || "";
+  const match = proficiency.match(/^\d/);
+  return match ? match[0] : "unknown";
+}
+
+function sortCards(cards) {
+  const sort = elements.sortSelect?.value || "frequency-desc";
+  const sorted = [...cards];
+  const compareFrequency = (a, b, direction = "desc") => {
+    const left = frequencyValue(a);
+    const right = frequencyValue(b);
+
+    if (left === null && right === null) {
+      return a.phrase.localeCompare(b.phrase);
+    }
+    if (left === null) {
+      return 1;
+    }
+    if (right === null) {
+      return -1;
+    }
+    return direction === "desc" ? right - left : left - right;
+  };
+
+  sorted.sort((a, b) => {
+    if (sort === "frequency-desc") {
+      return compareFrequency(a, b, "desc") || a.phrase.localeCompare(b.phrase);
+    }
+    if (sort === "frequency-asc") {
+      return compareFrequency(a, b, "asc") || a.phrase.localeCompare(b.phrase);
+    }
+    if (sort === "accuracy-desc") {
+      return accuracyValue(b) - accuracyValue(a) || compareFrequency(a, b, "desc");
+    }
+    if (sort === "accuracy-asc") {
+      return accuracyValue(a) - accuracyValue(b) || compareFrequency(a, b, "desc");
+    }
+    if (sort === "priority-desc") {
+      return priorityValue(b) - priorityValue(a) || compareFrequency(a, b, "desc");
+    }
+    return priorityValue(a) - priorityValue(b) || compareFrequency(a, b, "desc");
+  });
+
+  return sorted;
+}
+
 function setTab(tab) {
   state.activeTab = tab;
   elements.tabs.forEach((item) => item.classList.toggle("active", item.dataset.tab === tab));
   elements.panels.forEach((panel) => panel.classList.toggle("active", panel.dataset.panel === tab));
   const [eyebrow, title] = pageTitles[tab] || pageTitles.knowledge;
-  elements.workspaceEyebrow.textContent = eyebrow;
-  elements.workspaceTitle.textContent = title;
+  if (elements.workspaceEyebrow) {
+    elements.workspaceEyebrow.textContent = eyebrow;
+  }
+  if (elements.workspaceTitle) {
+    elements.workspaceTitle.textContent = title;
+  }
 }
 
 function updateSummary(payload) {
   const summary = payload.summary || {};
-  elements.generatedAt.textContent = `更新于 ${formatDate(payload.generated_at)}`;
-  elements.cardCount.textContent = summary.card_count ?? 0;
-  elements.totalOccurrences.textContent = summary.total_occurrences ?? 0;
-  elements.sourceCount.textContent = summary.source_count ?? 0;
-  elements.masteredCount.textContent = summary.mastered_count ?? 0;
+  if (elements.generatedAt) {
+    elements.generatedAt.textContent = `更新于 ${formatDate(payload.generated_at)}`;
+  }
+  if (elements.navCardCount) {
+    elements.navCardCount.textContent = summary.card_count ?? 0;
+  }
+  if (elements.cardCount) {
+    elements.cardCount.textContent = summary.card_count ?? 0;
+  }
+  if (elements.totalOccurrences) {
+    elements.totalOccurrences.textContent = summary.total_occurrences ?? 0;
+  }
+  if (elements.sourceCount) {
+    elements.sourceCount.textContent = summary.source_count ?? 0;
+  }
+  if (elements.masteredCount) {
+    elements.masteredCount.textContent = summary.mastered_count ?? 0;
+  }
 }
 
 function latestOccurrence(card) {
@@ -122,20 +241,59 @@ function renderCards(cards) {
   elements.cardList.innerHTML = cards
     .map((card) => {
       const occurrence = latestOccurrence(card);
+      const frequency = card.frequency_label || `${card.total_count ?? 0} 次`;
+      const key = cardKey(card);
+      const stats = practiceFor(card);
+      const isFlipped = state.flippedCards.has(key);
       return `
-        <article class="expression-card">
-          <div class="card-meta">
-            <span>${card.kind === "word" ? "WORD" : "PHRASE"}</span>
-            <span>${card.total_count} 次</span>
+        <article class="expression-card ${isFlipped ? "flipped" : ""}" data-card-key="${escapeHtml(key)}">
+          <div class="card-face card-front">
+            <div class="card-meta">
+              <span>${escapeHtml(card.priority || (card.kind === "word" ? "WORD" : "PHRASE"))}</span>
+              <span>${escapeHtml(frequency)}</span>
+            </div>
+            <div class="front-word">
+              <h3>${escapeHtml(card.phrase)}</h3>
+              <p>${card.kind === "word" ? "WORD" : "PHRASE"}</p>
+            </div>
+            <div class="card-footer">
+              <span>点击查看详情</span>
+              <span>${escapeHtml(card.proficiency || "new")}</span>
+            </div>
           </div>
-          <div>
-            <h3>${escapeHtml(card.phrase)}</h3>
-            <p class="meaning">${escapeHtml(card.meaning || "待补充含义")}</p>
-          </div>
-          <p class="example">${escapeHtml(occurrence.example || "暂无例句")}</p>
-          <div class="card-footer">
-            <span>${escapeHtml(occurrence.source_title || "未知来源")}</span>
-            <span>${escapeHtml(card.proficiency || "new")}</span>
+
+          <div class="card-face card-back">
+            <div class="card-meta">
+              <span>${escapeHtml(card.priority || "未分级")}</span>
+              <span>正确率 ${accuracyFor(stats)}</span>
+            </div>
+            <div>
+              <h3>${escapeHtml(card.phrase)}</h3>
+              <p class="meaning">${escapeHtml(card.meaning || "待补充含义")}</p>
+            </div>
+            <dl class="detail-grid">
+              <div>
+                <dt>频率</dt>
+                <dd>${escapeHtml(frequency)}</dd>
+              </div>
+              <div>
+                <dt>优先级</dt>
+                <dd>${escapeHtml(card.priority || "未分级")}</dd>
+              </div>
+              <div>
+                <dt>正确</dt>
+                <dd>${stats.correct}</dd>
+              </div>
+              <div>
+                <dt>错误</dt>
+                <dd>${stats.wrong}</dd>
+              </div>
+            </dl>
+            <p class="example">${escapeHtml(occurrence.example || "暂无例句")}</p>
+            <div class="practice-actions">
+              <button type="button" data-practice="correct" data-card-key="${escapeHtml(key)}">正确</button>
+              <button type="button" data-practice="wrong" data-card-key="${escapeHtml(key)}">错误</button>
+            </div>
           </div>
         </article>
       `;
@@ -144,19 +302,33 @@ function renderCards(cards) {
 }
 
 function applyFilters() {
+  renderCards(currentFilteredCards());
+}
+
+function currentFilteredCards() {
   const query = elements.searchInput.value.trim().toLowerCase();
   const kind = elements.kindFilter.value;
+  const priority = elements.priorityFilter?.value || "all";
+  const proficiency = elements.proficiencyFilter?.value || "all";
 
   const filtered = state.cards.filter((card) => {
     const occurrence = latestOccurrence(card);
-    const text = [card.phrase, card.meaning, occurrence.source_title, occurrence.example]
+    const text = [card.phrase, card.meaning, card.priority, card.frequency_label, occurrence.source_title, occurrence.example]
       .filter(Boolean)
       .join(" ")
       .toLowerCase();
-    return (!query || text.includes(query)) && (kind === "all" || card.kind === kind);
+    const matchesQuery = !query || text.includes(query);
+    const matchesKind = kind === "all" || card.kind === kind;
+    const matchesPriority = priority === "all" || card.priority === priority;
+    const matchesProficiency = proficiency === "all" || proficiencyValue(card) === proficiency;
+    return matchesQuery && matchesKind && matchesPriority && matchesProficiency;
   });
 
-  renderCards(filtered);
+  return sortCards(filtered);
+}
+
+function rerenderCurrentCards() {
+  renderCards(currentFilteredCards());
 }
 
 function sentenceFor(text, phrase) {
@@ -216,7 +388,9 @@ async function loadKnowledge() {
     elements.ruleEditor.value = payload.skill?.content || "暂无 Skill 内容";
     renderCards(state.cards);
   } catch (error) {
-    elements.generatedAt.textContent = "未找到导出数据";
+    if (elements.generatedAt) {
+      elements.generatedAt.textContent = "未找到导出数据";
+    }
     elements.ruleEditor.value = "请先本地运行 python3 scripts/process.py 生成 public/knowledge.json。";
     elements.cardList.innerHTML = `
       <div class="empty">
@@ -232,6 +406,37 @@ elements.tabs.forEach((tab) => {
 
 elements.searchInput.addEventListener("input", applyFilters);
 elements.kindFilter.addEventListener("change", applyFilters);
+elements.priorityFilter.addEventListener("change", applyFilters);
+elements.proficiencyFilter.addEventListener("change", applyFilters);
+elements.sortSelect.addEventListener("change", applyFilters);
+
+elements.cardList.addEventListener("click", (event) => {
+  const practiceButton = event.target.closest("[data-practice]");
+  if (practiceButton) {
+    event.stopPropagation();
+    const key = practiceButton.dataset.cardKey;
+    const action = practiceButton.dataset.practice;
+    const stats = state.practiceStats[key] || { correct: 0, wrong: 0 };
+    stats[action] += 1;
+    state.practiceStats[key] = stats;
+    savePracticeStats();
+    rerenderCurrentCards();
+    return;
+  }
+
+  const card = event.target.closest(".expression-card");
+  if (!card) {
+    return;
+  }
+
+  const key = card.dataset.cardKey;
+  if (state.flippedCards.has(key)) {
+    state.flippedCards.delete(key);
+  } else {
+    state.flippedCards.add(key);
+  }
+  rerenderCurrentCards();
+});
 
 elements.fillDemo.addEventListener("click", () => {
   elements.sourceTitle.value = "Demo work conversation";
@@ -255,5 +460,6 @@ elements.confirmCandidates.addEventListener("click", () => {
   }, 1800);
 });
 
+loadPracticeStats();
 setTab("knowledge");
 loadKnowledge();

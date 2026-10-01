@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-10-01T21:13:51+00:00",
+  "generated_at": "2026-10-01T21:31:30+00:00",
   "summary": {
-    "card_count": 4,
-    "total_occurrences": 6,
+    "card_count": 84,
+    "total_occurrences": 127,
     "source_count": 1,
-    "mastered_count": 0
+    "mastered_count": 0,
+    "pending_frequency_count": 58
   },
   "skill": {
     "path": "skills/current.md",
@@ -13,107 +14,2118 @@
   },
   "cards": [
     {
-      "id": "keep-you-posted",
-      "phrase": "Keep you posted",
-      "normalized_phrase": "keep you posted",
-      "meaning": "随时向你同步进展",
+      "id": "design-system",
+      "phrase": "design system",
+      "normalized_phrase": "design system",
+      "meaning": "设计系统",
       "kind": "phrase",
-      "proficiency": "new",
-      "total_count": 2,
-      "first_seen_at": "2026-10-01T21:13:51+00:00",
-      "last_seen_at": "2026-10-01T21:13:51+00:00",
+      "priority": "P0",
+      "frequency_label": "21",
+      "total_count": 21,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
       "occurrences": [
         {
-          "source_id": "2026-10-01-demo",
-          "source_title": "Demo work conversation",
-          "skill": "skills/current.md",
-          "example": "I'll keep you posted.",
-          "count": 2,
-          "created_at": "2026-10-01T21:13:51+00:00"
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 21,
+          "frequency_label": "21",
+          "created_at": "2026-10-01T00:00:00-07:00"
         }
       ],
-      "notes": ""
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
-      "id": "priority",
-      "phrase": "Priority",
-      "normalized_phrase": "priority",
-      "meaning": "优先事项",
+      "id": "workflow",
+      "phrase": "workflow",
+      "normalized_phrase": "workflow",
+      "meaning": "工作流",
       "kind": "word",
-      "proficiency": "new",
+      "priority": "P0",
+      "frequency_label": "17",
+      "total_count": 17,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 17,
+          "frequency_label": "17",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "exploration",
+      "phrase": "exploration",
+      "normalized_phrase": "exploration",
+      "meaning": "设计探索；方案探索",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "8",
+      "total_count": 8,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 8,
+          "frequency_label": "8",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "component",
+      "phrase": "component",
+      "normalized_phrase": "component",
+      "meaning": "组件",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "7",
+      "total_count": 7,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 7,
+          "frequency_label": "7",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "mental-model",
+      "phrase": "mental model",
+      "normalized_phrase": "mental model",
+      "meaning": "心智模型",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "6",
+      "total_count": 6,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 6,
+          "frequency_label": "6",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "case-study",
+      "phrase": "case study",
+      "normalized_phrase": "case study",
+      "meaning": "案例研究；设计案例",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "5",
+      "total_count": 5,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 5,
+          "frequency_label": "5",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "workshop",
+      "phrase": "workshop",
+      "normalized_phrase": "workshop",
+      "meaning": "工作坊",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "5",
+      "total_count": 5,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 5,
+          "frequency_label": "5",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "hierarchy",
+      "phrase": "hierarchy",
+      "normalized_phrase": "hierarchy",
+      "meaning": "层级；层级结构",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "3",
+      "total_count": 3,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "interaction",
+      "phrase": "interaction",
+      "normalized_phrase": "interaction",
+      "meaning": "交互",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "3",
+      "total_count": 3,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "usability-testing",
+      "phrase": "usability testing",
+      "normalized_phrase": "usability testing",
+      "meaning": "可用性测试",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "3",
+      "total_count": 3,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "jobs-to-be-done",
+      "phrase": "jobs to be done",
+      "normalized_phrase": "jobs to be done",
+      "meaning": "用户需要完成的任务（JTBD）",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "2",
       "total_count": 2,
-      "first_seen_at": "2026-10-01T21:13:51+00:00",
-      "last_seen_at": "2026-10-01T21:13:51+00:00",
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
       "occurrences": [
         {
-          "source_id": "2026-10-01-demo",
-          "source_title": "Demo work conversation",
-          "skill": "skills/current.md",
-          "example": "A: What is our priority?",
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
           "count": 2,
-          "created_at": "2026-10-01T21:13:51+00:00"
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
         }
       ],
-      "notes": ""
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
-      "id": "one-step-at-a-time",
-      "phrase": "One step at a time",
-      "normalized_phrase": "one step at a time",
-      "meaning": "一步一步来",
+      "id": "affinity-mapping",
+      "phrase": "affinity mapping",
+      "normalized_phrase": "affinity mapping",
+      "meaning": "亲和图归类法",
       "kind": "phrase",
-      "proficiency": "new",
+      "priority": "P0",
+      "frequency_label": "1",
       "total_count": 1,
-      "first_seen_at": "2026-10-01T21:13:51+00:00",
-      "last_seen_at": "2026-10-01T21:13:51+00:00",
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
       "occurrences": [
         {
-          "source_id": "2026-10-01-demo",
-          "source_title": "Demo work conversation",
-          "skill": "skills/current.md",
-          "example": "A: Let's take it one step at a time.",
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
           "count": 1,
-          "created_at": "2026-10-01T21:13:51+00:00"
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
         }
       ],
-      "notes": ""
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
-      "id": "sounds-good",
-      "phrase": "Sounds good",
-      "normalized_phrase": "sounds good",
-      "meaning": "听起来不错",
-      "kind": "phrase",
-      "proficiency": "new",
+      "id": "constraints",
+      "phrase": "constraints",
+      "normalized_phrase": "constraints",
+      "meaning": "约束条件",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "1",
       "total_count": 1,
-      "first_seen_at": "2026-10-01T21:13:51+00:00",
-      "last_seen_at": "2026-10-01T21:13:51+00:00",
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
       "occurrences": [
         {
-          "source_id": "2026-10-01-demo",
-          "source_title": "Demo work conversation",
-          "skill": "skills/current.md",
-          "example": "B: Sounds good.",
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
           "count": 1,
-          "created_at": "2026-10-01T21:13:51+00:00"
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
         }
       ],
-      "notes": ""
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "how-might-we",
+      "phrase": "How might we",
+      "normalized_phrase": "how might we",
+      "meaning": "我们可以如何……（HMW 设计提问法）",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "product-journey",
+      "phrase": "product journey",
+      "normalized_phrase": "product journey",
+      "meaning": "产品使用历程",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。"
+    },
+    {
+      "id": "responsiveness",
+      "phrase": "responsiveness",
+      "normalized_phrase": "responsiveness",
+      "meaning": "响应能力；响应性",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "user-satisfaction-rate",
+      "phrase": "user satisfaction rate",
+      "normalized_phrase": "user satisfaction rate",
+      "meaning": "用户满意率",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。"
+    },
+    {
+      "id": "banner",
+      "phrase": "banner",
+      "normalized_phrase": "banner",
+      "meaning": "横幅；页面顶部信息区",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "cognitive-load",
+      "phrase": "cognitive load",
+      "normalized_phrase": "cognitive load",
+      "meaning": "认知负荷",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "cognitive-overload",
+      "phrase": "cognitive overload",
+      "normalized_phrase": "cognitive overload",
+      "meaning": "认知过载",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "design",
+      "phrase": "design",
+      "normalized_phrase": "design",
+      "meaning": "设计",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "final-design",
+      "phrase": "final design",
+      "normalized_phrase": "final design",
+      "meaning": "最终设计",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "flow",
+      "phrase": "flow",
+      "normalized_phrase": "flow",
+      "meaning": "流程",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "get-started",
+      "phrase": "get started",
+      "normalized_phrase": "get started",
+      "meaning": "开始使用；开始操作",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "hover",
+      "phrase": "hover",
+      "normalized_phrase": "hover",
+      "meaning": "悬停",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "improvement",
+      "phrase": "improvement",
+      "normalized_phrase": "improvement",
+      "meaning": "改进",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "iteration",
+      "phrase": "iteration",
+      "normalized_phrase": "iteration",
+      "meaning": "迭代",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "product-design",
+      "phrase": "product design",
+      "normalized_phrase": "product design",
+      "meaning": "产品设计",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "seasonal-experience",
+      "phrase": "seasonal experience",
+      "normalized_phrase": "seasonal experience",
+      "meaning": "按周期运行的体验",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "solution",
+      "phrase": "solution",
+      "normalized_phrase": "solution",
+      "meaning": "解决方案",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "step-based-cards",
+      "phrase": "step-based cards",
+      "normalized_phrase": "step-based cards",
+      "meaning": "基于步骤的卡片",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "step-by-step-operation-paths",
+      "phrase": "step-by-step operation paths",
+      "normalized_phrase": "step-by-step operation paths",
+      "meaning": "逐步操作路径",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "tab",
+      "phrase": "tab",
+      "normalized_phrase": "tab",
+      "meaning": "选项卡",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "timeline",
+      "phrase": "timeline",
+      "normalized_phrase": "timeline",
+      "meaning": "时间线",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "vibe-coding",
+      "phrase": "vibe coding",
+      "normalized_phrase": "vibe coding",
+      "meaning": "通过自然语言与 AI 协作编程",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "8",
+      "total_count": 8,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 8,
+          "frequency_label": "8",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "mcp",
+      "phrase": "MCP",
+      "normalized_phrase": "mcp",
+      "meaning": "模型上下文协议（Model Context Protocol）",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "7",
+      "total_count": 7,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 7,
+          "frequency_label": "7",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "agentic",
+      "phrase": "agentic",
+      "normalized_phrase": "agentic",
+      "meaning": "具备自主行动能力的；智能体式的",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "3",
+      "total_count": 3,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "ai-prototyping",
+      "phrase": "AI prototyping",
+      "normalized_phrase": "ai prototyping",
+      "meaning": "借助 AI 制作原型",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "cui",
+      "phrase": "CUI",
+      "normalized_phrase": "cui",
+      "meaning": "对话式用户界面（Conversational User Interface）",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "additional-agents",
+      "phrase": "additional agents",
+      "normalized_phrase": "additional agents",
+      "meaning": "其他智能体",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "ai-agent",
+      "phrase": "AI agent",
+      "normalized_phrase": "ai agent",
+      "meaning": "AI 智能体",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "contextual-study-entry-points",
+      "phrase": "contextual study entry points",
+      "normalized_phrase": "contextual study entry points",
+      "meaning": "基于上下文的研究入口",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "conversational-experience",
+      "phrase": "conversational experience",
+      "normalized_phrase": "conversational experience",
+      "meaning": "对话式体验",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "global-agent-hub",
+      "phrase": "global agent hub",
+      "normalized_phrase": "global agent hub",
+      "meaning": "全局智能体中心",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "ground-truth",
+      "phrase": "ground truth",
+      "normalized_phrase": "ground truth",
+      "meaning": "真实值；标准答案",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "item-pool",
+      "phrase": "item pool",
+      "normalized_phrase": "item pool",
+      "meaning": "条目池",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "rag",
+      "phrase": "RAG",
+      "normalized_phrase": "rag",
+      "meaning": "检索增强生成",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "send-report-agent",
+      "phrase": "SEND report agent",
+      "normalized_phrase": "send report agent",
+      "meaning": "SEND 报告智能体",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "session-first",
+      "phrase": "session-first",
+      "normalized_phrase": "session-first",
+      "meaning": "会话优先",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "skills",
+      "phrase": "skills",
+      "normalized_phrase": "skills",
+      "meaning": "技能；智能体可调用的能力单元",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "study-setup-agent",
+      "phrase": "study setup agent",
+      "normalized_phrase": "study setup agent",
+      "meaning": "研究设置智能体",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "study-summary-agent",
+      "phrase": "study summary agent",
+      "normalized_phrase": "study summary agent",
+      "meaning": "研究总结智能体",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "task-based-agents",
+      "phrase": "task-based agents",
+      "normalized_phrase": "task-based agents",
+      "meaning": "任务型智能体",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "scope",
+      "phrase": "scope",
+      "normalized_phrase": "scope",
+      "meaning": "范围；项目边界",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "3",
+      "total_count": 3,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "end-to-end",
+      "phrase": "end-to-end",
+      "normalized_phrase": "end-to-end",
+      "meaning": "端到端；覆盖完整流程",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "background",
+      "phrase": "background",
+      "normalized_phrase": "background",
+      "meaning": "背景",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "capability-roadmap",
+      "phrase": "capability roadmap",
+      "normalized_phrase": "capability roadmap",
+      "meaning": "能力路线图",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "future-extensibility",
+      "phrase": "future extensibility",
+      "normalized_phrase": "future extensibility",
+      "meaning": "未来的可扩展性",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "global-monetization",
+      "phrase": "global monetization",
+      "normalized_phrase": "global monetization",
+      "meaning": "全球商业化；全球变现",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "integration-model",
+      "phrase": "integration model",
+      "normalized_phrase": "integration model",
+      "meaning": "集成模式",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "phase",
+      "phrase": "phase",
+      "normalized_phrase": "phase",
+      "meaning": "阶段",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "product-and-technology",
+      "phrase": "product and technology",
+      "normalized_phrase": "product and technology",
+      "meaning": "产品与技术",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "project-overview",
+      "phrase": "project overview",
+      "normalized_phrase": "project overview",
+      "meaning": "项目概览",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "soft-deletion",
+      "phrase": "soft deletion",
+      "normalized_phrase": "soft deletion",
+      "meaning": "软删除",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "tbd",
+      "phrase": "TBD",
+      "normalized_phrase": "tbd",
+      "meaning": "待定（to be determined）",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译集成路线图》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "version-rollback",
+      "phrase": "version rollback",
+      "normalized_phrase": "version rollback",
+      "meaning": "版本回滚",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "compensation",
+      "phrase": "compensation",
+      "normalized_phrase": "compensation",
+      "meaning": "薪酬；报酬",
+      "kind": "word",
+      "priority": "P3",
+      "frequency_label": "11",
+      "total_count": 11,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 11,
+          "frequency_label": "11",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "side-chat",
+      "phrase": "side chat",
+      "normalized_phrase": "side chat",
+      "meaning": "私下交流；旁支聊天",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "5",
+      "total_count": 5,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。",
+          "count": 5,
+          "frequency_label": "5",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。"
+    },
+    {
+      "id": "annual-review",
+      "phrase": "annual review",
+      "normalized_phrase": "annual review",
+      "meaning": "年度评审",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "calibration",
+      "phrase": "calibration",
+      "normalized_phrase": "calibration",
+      "meaning": "校准；评估对齐",
+      "kind": "word",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "contribution-summary",
+      "phrase": "contribution summary",
+      "normalized_phrase": "contribution summary",
+      "meaning": "贡献总结",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "evaluate-your-directs",
+      "phrase": "evaluate your directs",
+      "normalized_phrase": "evaluate your directs",
+      "meaning": "评估你的直属下属",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "high-judgment-decision",
+      "phrase": "high judgment decision",
+      "normalized_phrase": "high judgment decision",
+      "meaning": "需要高度判断力的决策",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "leadership-principles",
+      "phrase": "leadership principles",
+      "normalized_phrase": "leadership principles",
+      "meaning": "领导力准则",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "manager-resources",
+      "phrase": "manager resources",
+      "normalized_phrase": "manager resources",
+      "meaning": "管理者资源",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "org-path",
+      "phrase": "org path",
+      "normalized_phrase": "org path",
+      "meaning": "组织路径",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译组织架构》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "people-analytics",
+      "phrase": "people analytics",
+      "normalized_phrase": "people analytics",
+      "meaning": "人员分析",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "review-transferred-employees",
+      "phrase": "review transferred employees",
+      "normalized_phrase": "review transferred employees",
+      "meaning": "评审转岗员工",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "share-and-communicate",
+      "phrase": "share and communicate",
+      "normalized_phrase": "share and communicate",
+      "meaning": "分享与沟通",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "talent-cycle",
+      "phrase": "talent cycle",
+      "normalized_phrase": "talent cycle",
+      "meaning": "人才管理周期",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "talent-review",
+      "phrase": "talent review",
+      "normalized_phrase": "talent review",
+      "meaning": "人才评审",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "team-roster",
+      "phrase": "team roster",
+      "normalized_phrase": "team roster",
+      "meaning": "团队成员列表",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "work-contributions",
+      "phrase": "work contributions",
+      "normalized_phrase": "work contributions",
+      "meaning": "工作贡献",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
+    },
+    {
+      "id": "write-manager-summary",
+      "phrase": "write manager summary",
+      "normalized_phrase": "write manager summary",
+      "meaning": "撰写管理者总结",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "待核对",
+      "total_count": 0,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。",
+          "count": 0,
+          "frequency_label": "待核对",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
     }
   ],
   "sources": [
     {
-      "id": "2026-10-01-demo",
-      "title": "Demo work conversation",
-      "source_type": "daily_conversation",
-      "skill": "skills/current.md",
-      "created_at": "2026-10-01T00:00:00Z",
+      "id": "ux-english-wiki-2026-10-01",
+      "title": "UX English Wiki",
+      "source_type": "wiki",
+      "skill": "content/wiki/ux-english-wiki.md",
+      "created_at": "2026-10-01T00:00:00-07:00",
+      "processed_at": "2026-10-01T21:31:30+00:00",
       "status": "processed",
-      "content": "A: Let's take it one step at a time.\nB: Sounds good. I'll keep you posted.\nA: What is our priority?\nB: The launch is our priority. I'll keep you posted.",
-      "file": "content/inbox/2026-10-01-demo.json",
-      "hash": "cd2f8991961593d2e0190d5568cb281081064956c2df8042a325d66d979b63c5",
-      "candidate_count": 4,
-      "processed_at": "2026-10-01T21:13:51+00:00"
+      "file": "content/wiki/ux-english-wiki.md",
+      "card_count": 84,
+      "notes": "Imported from user-provided UX English Wiki. Frequency 待核对 is preserved as a label, not counted as zero."
     }
   ]
 }

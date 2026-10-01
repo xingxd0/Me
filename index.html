@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="app-shell">
-      <aside class="sidebar">
+      <header class="topbar">
         <a class="brand" href="#knowledge" aria-label="拾语首页">
           <span class="brand-mark"></span>
           <span>
@@ -20,19 +20,20 @@
             <small>PHRASEBOOK</small>
           </span>
         </a>
-        <nav class="side-nav" aria-label="主导航">
+        <nav class="top-nav" aria-label="主导航">
           <button class="active" type="button" data-tab="knowledge">知识库</button>
           <button type="button" data-tab="extract">文字提取</button>
           <button type="button" data-tab="rules">提取规则</button>
         </nav>
-        <div class="side-note">
-          <span class="dot"></span>
-          <span>一期为静态框架：网页展示和模拟提交，本地脚本负责真实处理。</span>
+        <div class="attention-score" aria-label="本地同步状态">
+          <span class="score-icon"></span>
+          <span>注意力点数</span>
+          <strong id="navCardCount">--</strong>
         </div>
-      </aside>
+      </header>
 
       <main class="workspace">
-        <header class="workspace-header">
+        <header class="workspace-header compact-header">
           <div>
             <p id="workspaceEyebrow" class="eyebrow">KNOWLEDGE BASE</p>
             <h1 id="workspaceTitle">知识库</h1>
@@ -44,25 +45,6 @@
         </header>
 
         <section class="tab-panel active" data-panel="knowledge">
-          <section class="summary-grid" aria-label="知识库统计">
-            <div>
-              <span>沉淀表达</span>
-              <strong id="cardCount">0</strong>
-            </div>
-            <div>
-              <span>记录次数</span>
-              <strong id="totalOccurrences">0</strong>
-            </div>
-            <div>
-              <span>来源内容</span>
-              <strong id="sourceCount">0</strong>
-            </div>
-            <div>
-              <span>已掌握</span>
-              <strong id="masteredCount">0</strong>
-            </div>
-          </section>
-
           <section id="knowledge" class="panel">
             <div class="panel-title">
               <div>
@@ -77,6 +59,29 @@
                 <option value="all">全部类型</option>
                 <option value="phrase">短句</option>
                 <option value="word">单词</option>
+              </select>
+              <select id="priorityFilter" aria-label="优先级">
+                <option value="all">全部优先级</option>
+                <option value="P0">P0</option>
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+              </select>
+              <select id="proficiencyFilter" aria-label="熟练度">
+                <option value="all">全部熟练度</option>
+                <option value="0">0/未测试</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <select id="sortSelect" aria-label="排序方式">
+                <option value="frequency-desc">频次高到低</option>
+                <option value="frequency-asc">频次低到高</option>
+                <option value="accuracy-desc">正确率高到低</option>
+                <option value="accuracy-asc">正确率低到高</option>
+                <option value="priority-asc">优先级 P0 → P3</option>
+                <option value="priority-desc">优先级 P3 → P0</option>
               </select>
             </div>
             <div id="cardList" class="cards"></div>
