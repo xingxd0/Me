@@ -3,34 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>xxd-design.com</title>
+    <title>拾语 | Expression System</title>
     <meta
       name="description"
-      content="A lightweight placeholder for the upcoming personal tools website."
+      content="A local-first English expression knowledge base powered by GitHub data and local processing."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="shell">
-      <p class="eyebrow">xxd-design.com</p>
-      <h1>个人工具站正在重建中</h1>
-      <p class="lead">
-        这里将逐步替换为新的个人工具网站。旧作品集已经归档，当前页面用于覆盖之前的线上版本。
-      </p>
-      <div class="card-list">
-        <section class="card">
-          <h2>当前状态</h2>
-          <p>仓库已重置，正在准备新的工具型站点结构。</p>
-        </section>
-        <section class="card">
-          <h2>作品集备份</h2>
-          <p>旧版本已保存到 Git 分支 <code>archive/portfolio-2026-09-09</code>。</p>
-        </section>
-        <section class="card">
-          <h2>下一步</h2>
-          <p>后续会逐步加入个人小工具、说明页面与导航结构。</p>
-        </section>
-      </div>
+    <div class="page-grid"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="拾语首页">
+        <span class="brand-mark"></span>
+        <span>拾语</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#knowledge">知识库</a>
+        <a href="#pipeline">运行链路</a>
+        <a href="#skill">当前 Skill</a>
+      </nav>
+      <span class="status-pill">GitHub 数据 · 本地处理 · 静态展示</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">PERSONAL EXPRESSION SYSTEM</p>
+          <h1>进步，始于表达。</h1>
+          <p class="lead">
+            把日常对话和文章沉淀为英语短句、单词与真实语境。数据保存在 GitHub，本地模型按 Skill 处理，网页只负责展示知识库。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#knowledge">查看知识库</a>
+            <a class="secondary-action" href="#pipeline">查看运行链路</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="系统状态">
+          <div class="panel-header">
+            <span>PROCESS STATUS</span>
+            <strong id="generatedAt">等待数据</strong>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <span>沉淀表达</span>
+              <strong id="cardCount">0</strong>
+            </div>
+            <div>
+              <span>记录次数</span>
+              <strong id="totalOccurrences">0</strong>
+            </div>
+            <div>
+              <span>来源内容</span>
+              <strong id="sourceCount">0</strong>
+            </div>
+            <div>
+              <span>已掌握</span>
+              <strong id="masteredCount">0</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="knowledge" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">KNOWLEDGE BASE</p>
+          <h2>知识库</h2>
+          <p>这里展示本地处理后 push 到 GitHub 的表达卡片。</p>
+        </div>
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="搜索表达、中文含义或来源..." />
+          <select id="kindFilter" aria-label="表达类型">
+            <option value="all">全部类型</option>
+            <option value="phrase">短句</option>
+            <option value="word">单词</option>
+          </select>
+        </div>
+        <div id="cardList" class="cards"></div>
+      </section>
+
+      <section id="pipeline" class="section split">
+        <div class="section-heading">
+          <p class="eyebrow">LOCAL PIPELINE</p>
+          <h2>运行链路</h2>
+          <p>第一版先不在网页提交内容，所有输入和处理都通过 GitHub 与本地脚本完成。</p>
+        </div>
+        <ol class="steps">
+          <li>把文章或对话放入 <code>content/inbox</code>。</li>
+          <li>本地执行 <code>python3 scripts/process.py</code>。</li>
+          <li>脚本读取 <code>skills/current.md</code> 并生成卡片。</li>
+          <li>结果写入 <code>data</code> 和 <code>public/knowledge.json</code>。</li>
+          <li>提交并 push 到 GitHub，网站自动展示最新知识库。</li>
+        </ol>
+      </section>
+
+      <section id="skill" class="section split">
+        <div class="section-heading">
+          <p class="eyebrow">CURRENT SKILL</p>
+          <h2>当前规则</h2>
+          <p>Skill 可以持续版本化，后续本地模型会严格按这里的规则分析内容。</p>
+        </div>
+        <pre id="skillContent" class="skill-box">正在读取 Skill...</pre>
+      </section>
     </main>
+
+    <footer class="footer">
+      <span>xxd-design.com</span>
+      <span>Static display for a local-first expression knowledge system.</span>
+    </footer>
+    <script src="./app.js"></script>
   </body>
 </html>

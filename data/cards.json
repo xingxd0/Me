@@ -1,0 +1,90 @@
+[
+  {
+    "id": "keep-you-posted",
+    "phrase": "Keep you posted",
+    "normalized_phrase": "keep you posted",
+    "meaning": "随时向你同步进展",
+    "kind": "phrase",
+    "proficiency": "new",
+    "total_count": 2,
+    "first_seen_at": "2026-10-01T21:13:51+00:00",
+    "last_seen_at": "2026-10-01T21:13:51+00:00",
+    "occurrences": [
+      {
+        "source_id": "2026-10-01-demo",
+        "source_title": "Demo work conversation",
+        "skill": "skills/current.md",
+        "example": "I'll keep you posted.",
+        "count": 2,
+        "created_at": "2026-10-01T21:13:51+00:00"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "priority",
+    "phrase": "Priority",
+    "normalized_phrase": "priority",
+    "meaning": "优先事项",
+    "kind": "word",
+    "proficiency": "new",
+    "total_count": 2,
+    "first_seen_at": "2026-10-01T21:13:51+00:00",
+    "last_seen_at": "2026-10-01T21:13:51+00:00",
+    "occurrences": [
+      {
+        "source_id": "2026-10-01-demo",
+        "source_title": "Demo work conversation",
+        "skill": "skills/current.md",
+        "example": "A: What is our priority?",
+        "count": 2,
+        "created_at": "2026-10-01T21:13:51+00:00"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "one-step-at-a-time",
+    "phrase": "One step at a time",
+    "normalized_phrase": "one step at a time",
+    "meaning": "一步一步来",
+    "kind": "phrase",
+    "proficiency": "new",
+    "total_count": 1,
+    "first_seen_at": "2026-10-01T21:13:51+00:00",
+    "last_seen_at": "2026-10-01T21:13:51+00:00",
+    "occurrences": [
+      {
+        "source_id": "2026-10-01-demo",
+        "source_title": "Demo work conversation",
+        "skill": "skills/current.md",
+        "example": "A: Let's take it one step at a time.",
+        "count": 1,
+        "created_at": "2026-10-01T21:13:51+00:00"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "sounds-good",
+    "phrase": "Sounds good",
+    "normalized_phrase": "sounds good",
+    "meaning": "听起来不错",
+    "kind": "phrase",
+    "proficiency": "new",
+    "total_count": 1,
+    "first_seen_at": "2026-10-01T21:13:51+00:00",
+    "last_seen_at": "2026-10-01T21:13:51+00:00",
+    "occurrences": [
+      {
+        "source_id": "2026-10-01-demo",
+        "source_title": "Demo work conversation",
+        "skill": "skills/current.md",
+        "example": "B: Sounds good.",
+        "count": 1,
+        "created_at": "2026-10-01T21:13:51+00:00"
+      }
+    ],
+    "notes": ""
+  }
+]
