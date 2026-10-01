@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-body {
-  background-color: #FFFFFF;
-  color: #111111;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
