@@ -2,11 +2,15 @@ const state = {
   cards: [],
   payload: null,
   activeTab: "knowledge",
+  knowledgeView: "cards",
   flippedCards: new Set(),
   practiceStats: {},
+  priorityOverrides: {},
 };
 
 const PRACTICE_STORAGE_KEY = "phrasebook-practice-stats";
+const PRIORITY_OVERRIDE_STORAGE_KEY = "phrasebook-priority-overrides";
+const FAMILIAR_DAYS = 30;
 
 const pageTitles = {
   knowledge: ["KNOWLEDGE BASE", "知识库"],
@@ -31,6 +35,9 @@ const elements = {
   priorityFilter: document.querySelector("#priorityFilter"),
   proficiencyFilter: document.querySelector("#proficiencyFilter"),
   sortSelect: document.querySelector("#sortSelect"),
+  viewToggle: document.querySelector("#viewToggle"),
+  exportList: document.querySelector("#exportList"),
+  tableList: document.querySelector("#tableList"),
   extractForm: document.querySelector("#extractForm"),
   sourceTitle: document.querySelector("#sourceTitle"),
   sourceText: document.querySelector("#sourceText"),
@@ -106,12 +113,146 @@ function savePracticeStats() {
   window.localStorage.setItem(PRACTICE_STORAGE_KEY, JSON.stringify(state.practiceStats));
 }
 
+function loadPriorityOverrides() {
+  try {
+    state.priorityOverrides = JSON.parse(window.localStorage.getItem(PRIORITY_OVERRIDE_STORAGE_KEY) || "{}");
+  } catch (error) {
+    state.priorityOverrides = {};
+  }
+  cleanupExpiredPriorityOverrides();
+}
+
+function savePriorityOverrides() {
+  window.localStorage.setItem(PRIORITY_OVERRIDE_STORAGE_KEY, JSON.stringify(state.priorityOverrides));
+}
+
 function cardKey(card) {
   return card.normalized_phrase || card.id || card.phrase;
 }
 
 function practiceFor(card) {
-  return state.practiceStats[cardKey(card)] || { correct: 0, wrong: 0 };
+  return state.practiceStats[cardKey(card)] || card.practice || { correct: 0, wrong: 0 };
+}
+
+function cleanupExpiredPriorityOverrides() {
+  const now = Date.now();
+  let changed = false;
+  Object.entries(state.priorityOverrides).forEach(([key, override]) => {
+    if (!override?.expiresAt || new Date(override.expiresAt).getTime() <= now) {
+      delete state.priorityOverrides[key];
+      changed = true;
+    }
+  });
+  if (changed) {
+    savePriorityOverrides();
+  }
+}
+
+function priorityOverrideFor(card) {
+  const override = state.priorityOverrides[cardKey(card)] || card.priority_override;
+  if (!override?.priority || !override?.expiresAt) {
+    if (!override?.priority || !override?.expires_at) {
+      return null;
+    }
+  }
+  const expiresAt = override.expiresAt || override.expires_at;
+  if (new Date(expiresAt).getTime() <= Date.now()) {
+    delete state.priorityOverrides[cardKey(card)];
+    savePriorityOverrides();
+    return null;
+  }
+  return { priority: override.priority, expiresAt };
+}
+
+function effectivePriority(card) {
+  return priorityOverrideFor(card)?.priority || card.priority || "";
+}
+
+function findCardByKey(cardKeyValue) {
+  return state.cards.find((card) => cardKey(card) === cardKeyValue);
+}
+
+function toggleFamiliar(cardKeyValue) {
+  const card = findCardByKey(cardKeyValue);
+  if (state.priorityOverrides[cardKeyValue]) {
+    delete state.priorityOverrides[cardKeyValue];
+    if (card) {
+      delete card.priority_override;
+    }
+    savePriorityOverrides();
+    return;
+  }
+
+  const expiresAt = new Date(Date.now() + FAMILIAR_DAYS * 24 * 60 * 60 * 1000).toISOString();
+  state.priorityOverrides[cardKeyValue] = {
+    priority: "P4",
+    expiresAt,
+  };
+  if (card) {
+    card.priority_override = {
+      priority: "P4",
+      expires_at: expiresAt,
+      reason: "familiar",
+    };
+  }
+  savePriorityOverrides();
+}
+
+function mergeCard(updatedCard) {
+  if (!updatedCard) {
+    return;
+  }
+  const key = cardKey(updatedCard);
+  const index = state.cards.findIndex((card) => cardKey(card) === key);
+  if (index >= 0) {
+    state.cards[index] = updatedCard;
+  }
+}
+
+async function postProgress(path, payload) {
+  const response = await fetch(path, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+  if (!response.ok) {
+    throw new Error(`Progress API failed: ${response.status}`);
+  }
+  return response.json();
+}
+
+function hydrateProgressFromCards() {
+  state.cards.forEach((card) => {
+    const key = cardKey(card);
+    if (card.practice) {
+      state.practiceStats[key] = {
+        correct: Number(card.practice.correct || 0),
+        wrong: Number(card.practice.wrong || 0),
+      };
+    }
+    const override = priorityOverrideFor(card);
+    if (override) {
+      state.priorityOverrides[key] = override;
+    }
+  });
+  savePracticeStats();
+  savePriorityOverrides();
+}
+
+function updateFamiliarRow(button, cardKeyValue) {
+  const card = findCardByKey(cardKeyValue);
+  const row = button.closest("tr");
+  if (!card || !row) {
+    return;
+  }
+
+  const priorityCell = row.children[2];
+  if (priorityCell) {
+    priorityCell.textContent = effectivePriority(card) || "未分级";
+  }
+  button.textContent = priorityOverrideFor(card) ? "不熟悉" : "熟悉";
 }
 
 function accuracyFor(stats) {
@@ -136,7 +277,7 @@ function frequencyValue(card) {
 }
 
 function priorityValue(card) {
-  const priority = card.priority || "P9";
+  const priority = effectivePriority(card) || "P9";
   const match = priority.match(/\d+/);
   return match ? Number(match[0]) : 9;
 }
@@ -148,7 +289,7 @@ function proficiencyValue(card) {
 }
 
 function sortCards(cards) {
-  const sort = elements.sortSelect?.value || "frequency-desc";
+  const sort = elements.sortSelect?.value || "priority-asc";
   const sorted = [...cards];
   const compareFrequency = (a, b, direction = "desc") => {
     const left = frequencyValue(a);
@@ -245,11 +386,12 @@ function renderCards(cards) {
       const key = cardKey(card);
       const stats = practiceFor(card);
       const isFlipped = state.flippedCards.has(key);
+      const priority = effectivePriority(card);
       return `
         <article class="expression-card ${isFlipped ? "flipped" : ""}" data-card-key="${escapeHtml(key)}">
           <div class="card-face card-front">
             <div class="card-meta">
-              <span>${escapeHtml(card.priority || (card.kind === "word" ? "WORD" : "PHRASE"))}</span>
+              <span>${escapeHtml(priority || (card.kind === "word" ? "WORD" : "PHRASE"))}</span>
               <span>${escapeHtml(frequency)}</span>
             </div>
             <div class="front-word">
@@ -264,7 +406,7 @@ function renderCards(cards) {
 
           <div class="card-face card-back">
             <div class="card-meta">
-              <span>${escapeHtml(card.priority || "未分级")}</span>
+              <span>${escapeHtml(priority || "未分级")}</span>
               <span>${escapeHtml(frequency)}</span>
             </div>
             <div class="back-meaning">
@@ -287,7 +429,7 @@ function renderCards(cards) {
 }
 
 function applyFilters() {
-  renderCards(currentFilteredCards());
+  renderKnowledge();
 }
 
 function currentFilteredCards() {
@@ -298,13 +440,14 @@ function currentFilteredCards() {
 
   const filtered = state.cards.filter((card) => {
     const occurrence = latestOccurrence(card);
-    const text = [card.phrase, card.meaning, card.priority, card.frequency_label, occurrence.source_title, occurrence.example]
+    const cardPriority = effectivePriority(card);
+    const text = [card.phrase, card.meaning, cardPriority, card.frequency_label, occurrence.source_title, occurrence.example]
       .filter(Boolean)
       .join(" ")
       .toLowerCase();
     const matchesQuery = !query || text.includes(query);
     const matchesKind = kind === "all" || card.kind === kind;
-    const matchesPriority = priority === "all" || card.priority === priority;
+    const matchesPriority = priority === "all" || cardPriority === priority;
     const matchesProficiency = proficiency === "all" || proficiencyValue(card) === proficiency;
     return matchesQuery && matchesKind && matchesPriority && matchesProficiency;
   });
@@ -313,7 +456,92 @@ function currentFilteredCards() {
 }
 
 function rerenderCurrentCards() {
-  renderCards(currentFilteredCards());
+  renderKnowledge();
+}
+
+function renderTable(cards) {
+  if (!cards.length) {
+    elements.tableList.innerHTML = `
+      <div class="empty">
+        还没有匹配的列表结果。请调整搜索、筛选或排序条件。
+      </div>
+    `;
+    return;
+  }
+
+  elements.tableList.innerHTML = `
+    <table class="knowledge-table">
+      <thead>
+        <tr>
+          <th>英文</th>
+          <th>中文</th>
+          <th>优先级</th>
+          <th>频率</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${cards
+          .map((card) => {
+            const frequency = card.frequency_label || `${card.total_count ?? 0} 次`;
+            const priority = effectivePriority(card);
+            const key = cardKey(card);
+            const isFamiliar = Boolean(priorityOverrideFor(card));
+            const actionText = isFamiliar ? "不熟悉" : "熟悉";
+            return `
+              <tr>
+                <td>${escapeHtml(card.phrase)}</td>
+                <td>${escapeHtml(card.meaning || "待补充含义")}</td>
+                <td>${escapeHtml(priority || "未分级")}</td>
+                <td>${escapeHtml(frequency)}</td>
+                <td><button class="text-action" type="button" data-familiar="${escapeHtml(key)}">${actionText}</button></td>
+              </tr>
+            `;
+          })
+          .join("")}
+      </tbody>
+    </table>
+  `;
+}
+
+function renderKnowledge() {
+  const cards = currentFilteredCards();
+  const isListView = state.knowledgeView === "list";
+
+  elements.cardList.hidden = isListView;
+  elements.tableList.hidden = !isListView;
+  elements.viewToggle.textContent = isListView ? "列表视图" : "卡片视图";
+  elements.viewToggle.setAttribute("aria-pressed", String(isListView));
+
+  if (isListView) {
+    renderTable(cards);
+    return;
+  }
+  renderCards(cards);
+}
+
+function csvValue(value) {
+  const text = String(value ?? "");
+  return `"${text.replaceAll('"', '""')}"`;
+}
+
+function exportCurrentList() {
+  const cards = currentFilteredCards();
+  const rows = [["英文", "中文", "优先级", "频率"]];
+  cards.forEach((card) => {
+    rows.push([card.phrase, card.meaning || "", effectivePriority(card) || "", card.frequency_label || `${card.total_count ?? 0}`]);
+  });
+
+  const csv = rows.map((row) => row.map(csvValue).join(",")).join("\n");
+  const blob = new Blob([`\uFEFF${csv}`], { type: "text/csv;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `phrasebook-${new Date().toISOString().slice(0, 10)}.csv`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
 }
 
 function sentenceFor(text, phrase) {
@@ -369,9 +597,10 @@ async function loadKnowledge() {
     const payload = await response.json();
     state.payload = payload;
     state.cards = payload.cards || [];
+    hydrateProgressFromCards();
     updateSummary(payload);
     elements.ruleEditor.value = payload.skill?.content || "暂无 Skill 内容";
-    renderCards(state.cards);
+    renderKnowledge();
   } catch (error) {
     if (elements.generatedAt) {
       elements.generatedAt.textContent = "未找到导出数据";
@@ -394,8 +623,33 @@ elements.kindFilter.addEventListener("change", applyFilters);
 elements.priorityFilter.addEventListener("change", applyFilters);
 elements.proficiencyFilter.addEventListener("change", applyFilters);
 elements.sortSelect.addEventListener("change", applyFilters);
+elements.viewToggle.addEventListener("click", () => {
+  state.knowledgeView = state.knowledgeView === "cards" ? "list" : "cards";
+  renderKnowledge();
+});
+elements.exportList.addEventListener("click", exportCurrentList);
 
-elements.cardList.addEventListener("click", (event) => {
+elements.tableList.addEventListener("click", async (event) => {
+  const familiarButton = event.target.closest("[data-familiar]");
+  if (!familiarButton) {
+    return;
+  }
+  const key = familiarButton.dataset.familiar;
+  toggleFamiliar(key);
+  updateFamiliarRow(familiarButton, key);
+  try {
+    const result = await postProgress("/api/familiar", {
+      card_key: key,
+      familiar: Boolean(state.priorityOverrides[key]),
+    });
+    mergeCard(result.card);
+    updateFamiliarRow(familiarButton, key);
+  } catch (error) {
+    console.warn("Falling back to browser-only familiar storage.", error);
+  }
+});
+
+elements.cardList.addEventListener("click", async (event) => {
   const practiceButton = event.target.closest("[data-practice]");
   if (practiceButton) {
     event.stopPropagation();
@@ -406,6 +660,23 @@ elements.cardList.addEventListener("click", (event) => {
     state.practiceStats[key] = stats;
     savePracticeStats();
     rerenderCurrentCards();
+    try {
+      const result = await postProgress("/api/practice", {
+        card_key: key,
+        action,
+      });
+      mergeCard(result.card);
+      if (result.card?.practice) {
+        state.practiceStats[key] = {
+          correct: Number(result.card.practice.correct || 0),
+          wrong: Number(result.card.practice.wrong || 0),
+        };
+        savePracticeStats();
+        rerenderCurrentCards();
+      }
+    } catch (error) {
+      console.warn("Falling back to browser-only practice storage.", error);
+    }
     return;
   }
 
@@ -446,5 +717,6 @@ elements.confirmCandidates.addEventListener("click", () => {
 });
 
 loadPracticeStats();
+loadPriorityOverrides();
 setTab("knowledge");
 loadKnowledge();

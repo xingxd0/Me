@@ -51,7 +51,10 @@
                 <h2>表达卡片</h2>
                 <p>首页只展示已经沉淀的单词和短句卡片。</p>
               </div>
-              <span class="readonly-badge">知识库视图</span>
+              <div class="view-actions">
+                <button id="viewToggle" class="readonly-badge view-toggle" type="button" aria-pressed="false">卡片视图</button>
+                <button id="exportList" class="readonly-badge export-button" type="button">导出</button>
+              </div>
             </div>
             <div class="toolbar">
               <input id="searchInput" type="search" placeholder="搜索表达、中文含义或来源..." />
@@ -66,6 +69,7 @@
                 <option value="P1">P1</option>
                 <option value="P2">P2</option>
                 <option value="P3">P3</option>
+                <option value="P4">P4</option>
               </select>
               <select id="proficiencyFilter" aria-label="熟练度">
                 <option value="all">全部熟练度</option>
@@ -80,11 +84,12 @@
                 <option value="frequency-asc">频次低到高</option>
                 <option value="accuracy-desc">正确率高到低</option>
                 <option value="accuracy-asc">正确率低到高</option>
-                <option value="priority-asc">优先级 P0 → P3</option>
-                <option value="priority-desc">优先级 P3 → P0</option>
+                <option value="priority-asc" selected>优先级 P0 → P4</option>
+                <option value="priority-desc">优先级 P4 → P0</option>
               </select>
             </div>
             <div id="cardList" class="cards"></div>
+            <div id="tableList" class="table-view" hidden></div>
           </section>
         </section>
 
@@ -188,6 +193,6 @@
         </section>
       </main>
     </div>
-    <script src="./app.js"></script>
+    <script src="./app.js?v=20261001-local-write-api"></script>
   </body>
 </html>
