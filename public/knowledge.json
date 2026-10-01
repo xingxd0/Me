@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-01T21:31:30+00:00",
+  "generated_at": "2026-10-01T22:57:21+00:00",
   "summary": {
-    "card_count": 84,
-    "total_occurrences": 127,
-    "source_count": 1,
+    "card_count": 130,
+    "total_occurrences": 242,
+    "source_count": 2,
     "mastered_count": 0,
     "pending_frequency_count": 58
   },
@@ -62,6 +62,31 @@
         }
       ],
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "scenario",
+      "phrase": "scenario",
+      "normalized_phrase": "scenario",
+      "meaning": "使用场景",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "12",
+      "total_count": 12,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 12,
+          "frequency_label": "12",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "exploration",
@@ -139,6 +164,56 @@
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
+      "id": "structured",
+      "phrase": "structured",
+      "normalized_phrase": "structured",
+      "meaning": "结构化的",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "6",
+      "total_count": 6,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 6,
+          "frequency_label": "6",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "user-involvement",
+      "phrase": "user involvement",
+      "normalized_phrase": "user involvement",
+      "meaning": "用户参与程度",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "6",
+      "total_count": 6,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 6,
+          "frequency_label": "6",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
       "id": "case-study",
       "phrase": "case study",
       "normalized_phrase": "case study",
@@ -187,6 +262,40 @@
         }
       ],
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "constraints",
+      "phrase": "constraints",
+      "normalized_phrase": "constraints",
+      "meaning": "约束条件",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "4",
+      "total_count": 4,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-2026-10-01",
+          "source_title": "UX English Wiki",
+          "skill": "content/wiki/ux-english-wiki.md",
+          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        },
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "hierarchy",
@@ -264,6 +373,31 @@
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
+      "id": "discoverability",
+      "phrase": "discoverability",
+      "normalized_phrase": "discoverability",
+      "meaning": "功能被用户发现的容易程度",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
       "id": "jobs-to-be-done",
       "phrase": "jobs to be done",
       "normalized_phrase": "jobs to be done",
@@ -289,36 +423,61 @@
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
-      "id": "affinity-mapping",
-      "phrase": "affinity mapping",
-      "normalized_phrase": "affinity mapping",
-      "meaning": "亲和图归类法",
-      "kind": "phrase",
+      "id": "reusable",
+      "phrase": "reusable",
+      "normalized_phrase": "reusable",
+      "meaning": "可复用的",
+      "kind": "word",
       "priority": "P0",
-      "frequency_label": "1",
-      "total_count": 1,
+      "frequency_label": "2",
+      "total_count": 2,
       "proficiency": "0/未测试",
       "first_seen_at": "2026-10-01T00:00:00-07:00",
       "last_seen_at": "2026-10-01T00:00:00-07:00",
       "occurrences": [
         {
-          "source_id": "ux-english-wiki-2026-10-01",
-          "source_title": "UX English Wiki",
-          "skill": "content/wiki/ux-english-wiki.md",
-          "example": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。",
-          "count": 1,
-          "frequency_label": "1",
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
           "created_at": "2026-10-01T00:00:00-07:00"
         }
       ],
-      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
-      "id": "constraints",
-      "phrase": "constraints",
-      "normalized_phrase": "constraints",
-      "meaning": "约束条件",
-      "kind": "word",
+      "id": "sole-designer",
+      "phrase": "sole designer",
+      "normalized_phrase": "sole designer",
+      "meaning": "唯一负责的设计师",
+      "kind": "phrase",
+      "priority": "P0",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "affinity-mapping",
+      "phrase": "affinity mapping",
+      "normalized_phrase": "affinity mapping",
+      "meaning": "亲和图归类法",
+      "kind": "phrase",
       "priority": "P0",
       "frequency_label": "1",
       "total_count": 1,
@@ -389,6 +548,31 @@
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。"
     },
     {
+      "id": "refine",
+      "phrase": "refine",
+      "normalized_phrase": "refine",
+      "meaning": "完善；逐步调整",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
       "id": "responsiveness",
       "phrase": "responsiveness",
       "normalized_phrase": "responsiveness",
@@ -437,6 +621,31 @@
         }
       ],
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。"
+    },
+    {
+      "id": "validate",
+      "phrase": "validate",
+      "normalized_phrase": "validate",
+      "meaning": "验证；证实",
+      "kind": "word",
+      "priority": "P0",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "banner",
@@ -864,6 +1073,31 @@
       "notes": "恢复自《翻译设计迭代》的明确英文表达；历史收词状态及累计频率待核对。"
     },
     {
+      "id": "hybrid",
+      "phrase": "hybrid",
+      "normalized_phrase": "hybrid",
+      "meaning": "混合式的",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "8",
+      "total_count": 8,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 8,
+          "frequency_label": "8",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
       "id": "vibe-coding",
       "phrase": "vibe coding",
       "normalized_phrase": "vibe coding",
@@ -914,6 +1148,56 @@
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
+      "id": "generative",
+      "phrase": "generative",
+      "normalized_phrase": "generative",
+      "meaning": "生成式的",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "5",
+      "total_count": 5,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 5,
+          "frequency_label": "5",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "deterministic",
+      "phrase": "deterministic",
+      "normalized_phrase": "deterministic",
+      "meaning": "确定性的；行为固定、结果可预测的",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "4",
+      "total_count": 4,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 4,
+          "frequency_label": "4",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
       "id": "agentic",
       "phrase": "agentic",
       "normalized_phrase": "agentic",
@@ -937,6 +1221,31 @@
         }
       ],
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "ambiguity",
+      "phrase": "ambiguity",
+      "normalized_phrase": "ambiguity",
+      "meaning": "歧义；含糊不清（名词）",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "3",
+      "total_count": 3,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "ai-prototyping",
@@ -964,6 +1273,131 @@
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
     },
     {
+      "id": "ambiguous",
+      "phrase": "ambiguous",
+      "normalized_phrase": "ambiguous",
+      "meaning": "有歧义的；不明确的（形容词）",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "intent",
+      "phrase": "intent",
+      "normalized_phrase": "intent",
+      "meaning": "意图",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "authorization",
+      "phrase": "authorization",
+      "normalized_phrase": "authorization",
+      "meaning": "授权",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "context-aware",
+      "phrase": "context-aware",
+      "normalized_phrase": "context-aware",
+      "meaning": "能感知并利用上下文的",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "conversational-turn",
+      "phrase": "conversational turn",
+      "normalized_phrase": "conversational turn",
+      "meaning": "对话轮次",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
       "id": "cui",
       "phrase": "CUI",
       "normalized_phrase": "cui",
@@ -987,6 +1421,156 @@
         }
       ],
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+    },
+    {
+      "id": "grounding",
+      "phrase": "grounding",
+      "normalized_phrase": "grounding",
+      "meaning": "让回答有可靠资料依据；原文搭配为 source grounding",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "human-in-the-loop",
+      "phrase": "human in the loop",
+      "normalized_phrase": "human in the loop",
+      "meaning": "在流程中保留人的参与或审核",
+      "kind": "phrase",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "infer",
+      "phrase": "infer",
+      "normalized_phrase": "infer",
+      "meaning": "推断",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "latency",
+      "phrase": "latency",
+      "normalized_phrase": "latency",
+      "meaning": "延迟",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "proactive",
+      "phrase": "proactive",
+      "normalized_phrase": "proactive",
+      "meaning": "主动的；提前采取行动的",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "verifiable",
+      "phrase": "verifiable",
+      "normalized_phrase": "verifiable",
+      "meaning": "可核实的；可验证的",
+      "kind": "word",
+      "priority": "P1",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "additional-agents",
@@ -1345,8 +1929,8 @@
       "meaning": "范围；项目边界",
       "kind": "word",
       "priority": "P2",
-      "frequency_label": "3",
-      "total_count": 3,
+      "frequency_label": "8",
+      "total_count": 8,
       "proficiency": "0/未测试",
       "first_seen_at": "2026-10-01T00:00:00-07:00",
       "last_seen_at": "2026-10-01T00:00:00-07:00",
@@ -1359,9 +1943,68 @@
           "count": 3,
           "frequency_label": "3",
           "created_at": "2026-10-01T00:00:00-07:00"
+        },
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 5,
+          "frequency_label": "5",
+          "created_at": "2026-10-01T00:00:00-07:00"
         }
       ],
-      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "customize",
+      "phrase": "customize",
+      "normalized_phrase": "customize",
+      "meaning": "定制；按需求调整",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "7",
+      "total_count": 7,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 7,
+          "frequency_label": "7",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "domain",
+      "phrase": "domain",
+      "normalized_phrase": "domain",
+      "meaning": "领域；业务领域",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "5",
+      "total_count": 5,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 5,
+          "frequency_label": "5",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "end-to-end",
@@ -1370,8 +2013,8 @@
       "meaning": "端到端；覆盖完整流程",
       "kind": "word",
       "priority": "P2",
-      "frequency_label": "1",
-      "total_count": 1,
+      "frequency_label": "5",
+      "total_count": 5,
       "proficiency": "0/未测试",
       "first_seen_at": "2026-10-01T00:00:00-07:00",
       "last_seen_at": "2026-10-01T00:00:00-07:00",
@@ -1384,9 +2027,243 @@
           "count": 1,
           "frequency_label": "1",
           "created_at": "2026-10-01T00:00:00-07:00"
+        },
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 4,
+          "frequency_label": "4",
+          "created_at": "2026-10-01T00:00:00-07:00"
         }
       ],
-      "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。"
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "stakeholder",
+      "phrase": "stakeholder",
+      "normalized_phrase": "stakeholder",
+      "meaning": "利益相关方；项目相关方",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "3",
+      "total_count": 3,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 3,
+          "frequency_label": "3",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "evergreen",
+      "phrase": "evergreen",
+      "normalized_phrase": "evergreen",
+      "meaning": "长期适用的；不过时的",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "implementation",
+      "phrase": "implementation",
+      "normalized_phrase": "implementation",
+      "meaning": "实现；落地",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "success-criteria",
+      "phrase": "success criteria",
+      "normalized_phrase": "success criteria",
+      "meaning": "成功标准（criteria 是 criterion 的复数）",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "2",
+      "total_count": 2,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 2,
+          "frequency_label": "2",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "align-with",
+      "phrase": "align with",
+      "normalized_phrase": "align with",
+      "meaning": "与……对齐；达成一致",
+      "kind": "phrase",
+      "priority": "P2",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "baseline",
+      "phrase": "baseline",
+      "normalized_phrase": "baseline",
+      "meaning": "基准；基本要求",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "configurable",
+      "phrase": "configurable",
+      "normalized_phrase": "configurable",
+      "meaning": "可配置的",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "extensible",
+      "phrase": "extensible",
+      "normalized_phrase": "extensible",
+      "meaning": "可扩充功能的",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "scalable",
+      "phrase": "scalable",
+      "normalized_phrase": "scalable",
+      "meaning": "可扩展的；能支持规模增长的",
+      "kind": "word",
+      "priority": "P2",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "background",
@@ -1712,6 +2589,306 @@
         }
       ],
       "notes": "用户于 2026-10-01 确认的最新批次频率；非已核实的历史累计频率。 原始音频/转写不可用，ASR 是否有误待核对；保留用户确认写法。"
+    },
+    {
+      "id": "act-on",
+      "phrase": "act on",
+      "normalized_phrase": "act on",
+      "meaning": "根据……采取行动",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "at-scale",
+      "phrase": "at scale",
+      "normalized_phrase": "at scale",
+      "meaning": "在大规模应用中",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "flag-an-issue",
+      "phrase": "flag an issue",
+      "normalized_phrase": "flag an issue",
+      "meaning": "标出问题；提醒注意问题（转录中为 flag that issue）",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "from-scratch",
+      "phrase": "from scratch",
+      "normalized_phrase": "from scratch",
+      "meaning": "从零开始",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "get-something-done",
+      "phrase": "get something done",
+      "normalized_phrase": "get something done",
+      "meaning": "把事情办成",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "give-you-a-little-more-context",
+      "phrase": "give you a little more context",
+      "normalized_phrase": "give you a little more context",
+      "meaning": "补充一点背景",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "long-story-short",
+      "phrase": "long story short",
+      "normalized_phrase": "long story short",
+      "meaning": "长话短说",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "more-specifically",
+      "phrase": "more specifically",
+      "normalized_phrase": "more specifically",
+      "meaning": "更具体地说",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "speak-their-language",
+      "phrase": "speak their language",
+      "normalized_phrase": "speak their language",
+      "meaning": "用对方熟悉的方式沟通",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "take-a-quick-tour",
+      "phrase": "take a quick tour",
+      "normalized_phrase": "take a quick tour",
+      "meaning": "快速了解一下",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "up-front",
+      "phrase": "up front",
+      "normalized_phrase": "up front",
+      "meaning": "提前；一开始就",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
+    },
+    {
+      "id": "walk-you-through",
+      "phrase": "walk you through",
+      "normalized_phrase": "walk you through",
+      "meaning": "带你逐步了解",
+      "kind": "phrase",
+      "priority": "P3",
+      "frequency_label": "1",
+      "total_count": 1,
+      "proficiency": "0/未测试",
+      "first_seen_at": "2026-10-01T00:00:00-07:00",
+      "last_seen_at": "2026-10-01T00:00:00-07:00",
+      "occurrences": [
+        {
+          "source_id": "ux-english-wiki-increment-2026-10-01",
+          "source_title": "UX English Wiki Increment",
+          "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+          "example": "用户提供的新批次词库；重复词条按频率累计增加。",
+          "count": 1,
+          "frequency_label": "1",
+          "created_at": "2026-10-01T00:00:00-07:00"
+        }
+      ],
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     },
     {
       "id": "annual-review",
@@ -2126,6 +3303,18 @@
       "file": "content/wiki/ux-english-wiki.md",
       "card_count": 84,
       "notes": "Imported from user-provided UX English Wiki. Frequency 待核对 is preserved as a label, not counted as zero."
+    },
+    {
+      "id": "ux-english-wiki-increment-2026-10-01",
+      "title": "UX English Wiki Increment",
+      "source_type": "wiki_increment",
+      "skill": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+      "created_at": "2026-10-01T00:00:00-07:00",
+      "processed_at": "2026-10-01T22:57:21+00:00",
+      "status": "processed",
+      "file": "content/wiki/ux-english-wiki-increment-2026-10-01.md",
+      "card_count": 49,
+      "notes": "用户提供的新批次词库；重复词条按频率累计增加。"
     }
   ]
 }
