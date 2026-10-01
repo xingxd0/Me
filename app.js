@@ -265,31 +265,16 @@ function renderCards(cards) {
           <div class="card-face card-back">
             <div class="card-meta">
               <span>${escapeHtml(card.priority || "未分级")}</span>
-              <span>正确率 ${accuracyFor(stats)}</span>
+              <span>${escapeHtml(frequency)}</span>
             </div>
-            <div>
-              <h3>${escapeHtml(card.phrase)}</h3>
+            <div class="back-meaning">
               <p class="meaning">${escapeHtml(card.meaning || "待补充含义")}</p>
             </div>
-            <dl class="detail-grid">
-              <div>
-                <dt>频率</dt>
-                <dd>${escapeHtml(frequency)}</dd>
-              </div>
-              <div>
-                <dt>优先级</dt>
-                <dd>${escapeHtml(card.priority || "未分级")}</dd>
-              </div>
-              <div>
-                <dt>正确</dt>
-                <dd>${stats.correct}</dd>
-              </div>
-              <div>
-                <dt>错误</dt>
-                <dd>${stats.wrong}</dd>
-              </div>
-            </dl>
-            <p class="example">${escapeHtml(occurrence.example || "暂无例句")}</p>
+            <div class="practice-stats">
+              <span>正确率 <strong>${accuracyFor(stats)}</strong></span>
+              <span>正确 <strong>${stats.correct}</strong></span>
+              <span>错误 <strong>${stats.wrong}</strong></span>
+            </div>
             <div class="practice-actions">
               <button type="button" data-practice="correct" data-card-key="${escapeHtml(key)}">正确</button>
               <button type="button" data-practice="wrong" data-card-key="${escapeHtml(key)}">错误</button>
