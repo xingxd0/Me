@@ -1,10 +1,20 @@
 const state = {
   cards: [],
-  filteredCards: [],
   payload: null,
+  activeTab: "knowledge",
+};
+
+const pageTitles = {
+  knowledge: ["KNOWLEDGE BASE", "知识库"],
+  extract: ["TEXT EXTRACTION", "文字提取"],
+  rules: ["RULES", "提取规则"],
 };
 
 const elements = {
+  tabs: [...document.querySelectorAll("[data-tab]")],
+  panels: [...document.querySelectorAll("[data-panel]")],
+  workspaceEyebrow: document.querySelector("#workspaceEyebrow"),
+  workspaceTitle: document.querySelector("#workspaceTitle"),
   generatedAt: document.querySelector("#generatedAt"),
   cardCount: document.querySelector("#cardCount"),
   totalOccurrences: document.querySelector("#totalOccurrences"),
@@ -13,8 +23,46 @@ const elements = {
   cardList: document.querySelector("#cardList"),
   searchInput: document.querySelector("#searchInput"),
   kindFilter: document.querySelector("#kindFilter"),
-  skillContent: document.querySelector("#skillContent"),
+  extractForm: document.querySelector("#extractForm"),
+  sourceTitle: document.querySelector("#sourceTitle"),
+  sourceText: document.querySelector("#sourceText"),
+  fillDemo: document.querySelector("#fillDemo"),
+  candidateList: document.querySelector("#candidateList"),
+  confirmCandidates: document.querySelector("#confirmCandidates"),
+  ruleEditor: document.querySelector("#ruleEditor"),
 };
+
+const demoText = `A: Let's take it one step at a time.
+B: Sounds good. I'll keep you posted.
+A: What is our priority?
+B: The launch is our priority. I'll keep you posted.`;
+
+const simulatedRules = [
+  {
+    match: /one step at a time/gi,
+    phrase: "One step at a time",
+    meaning: "一步一步来",
+    kind: "phrase",
+  },
+  {
+    match: /keep you posted/gi,
+    phrase: "Keep you posted",
+    meaning: "随时向你同步进展",
+    kind: "phrase",
+  },
+  {
+    match: /priority/gi,
+    phrase: "Priority",
+    meaning: "优先事项",
+    kind: "word",
+  },
+  {
+    match: /sounds good/gi,
+    phrase: "Sounds good",
+    meaning: "听起来不错",
+    kind: "phrase",
+  },
+];
 
 function formatDate(value) {
   if (!value) {
@@ -27,6 +75,24 @@ function formatDate(value) {
     hour: "2-digit",
     minute: "2-digit",
   }).format(new Date(value));
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function setTab(tab) {
+  state.activeTab = tab;
+  elements.tabs.forEach((item) => item.classList.toggle("active", item.dataset.tab === tab));
+  elements.panels.forEach((panel) => panel.classList.toggle("active", panel.dataset.panel === tab));
+  const [eyebrow, title] = pageTitles[tab] || pageTitles.knowledge;
+  elements.workspaceEyebrow.textContent = eyebrow;
+  elements.workspaceTitle.textContent = title;
 }
 
 function updateSummary(payload) {
@@ -47,7 +113,7 @@ function renderCards(cards) {
   if (!cards.length) {
     elements.cardList.innerHTML = `
       <div class="empty">
-        还没有匹配的卡片。请在 GitHub 仓库的 <code>content/inbox</code> 添加原文，然后本地运行处理脚本。
+        还没有匹配的卡片。请把原文放入 <code>content/inbox</code>，本地运行处理脚本后同步到 GitHub。
       </div>
     `;
     return;
@@ -56,8 +122,6 @@ function renderCards(cards) {
   elements.cardList.innerHTML = cards
     .map((card) => {
       const occurrence = latestOccurrence(card);
-      const example = occurrence.example || "暂无例句";
-      const source = occurrence.source_title || "未知来源";
       return `
         <article class="expression-card">
           <div class="card-meta">
@@ -65,13 +129,13 @@ function renderCards(cards) {
             <span>${card.total_count} 次</span>
           </div>
           <div>
-            <h3>${card.phrase}</h3>
-            <p class="meaning">${card.meaning || "待补充含义"}</p>
+            <h3>${escapeHtml(card.phrase)}</h3>
+            <p class="meaning">${escapeHtml(card.meaning || "待补充含义")}</p>
           </div>
-          <p class="example">${example}</p>
+          <p class="example">${escapeHtml(occurrence.example || "暂无例句")}</p>
           <div class="card-footer">
-            <span>${source}</span>
-            <span>${card.proficiency || "new"}</span>
+            <span>${escapeHtml(occurrence.source_title || "未知来源")}</span>
+            <span>${escapeHtml(card.proficiency || "new")}</span>
           </div>
         </article>
       `;
@@ -83,18 +147,60 @@ function applyFilters() {
   const query = elements.searchInput.value.trim().toLowerCase();
   const kind = elements.kindFilter.value;
 
-  state.filteredCards = state.cards.filter((card) => {
+  const filtered = state.cards.filter((card) => {
     const occurrence = latestOccurrence(card);
     const text = [card.phrase, card.meaning, occurrence.source_title, occurrence.example]
       .filter(Boolean)
       .join(" ")
       .toLowerCase();
-    const matchesQuery = !query || text.includes(query);
-    const matchesKind = kind === "all" || card.kind === kind;
-    return matchesQuery && matchesKind;
+    return (!query || text.includes(query)) && (kind === "all" || card.kind === kind);
   });
 
-  renderCards(state.filteredCards);
+  renderCards(filtered);
+}
+
+function sentenceFor(text, phrase) {
+  const sentences = text.split(/(?<=[.!?。！？])\s+/);
+  const found = sentences.find((sentence) => sentence.toLowerCase().includes(phrase.toLowerCase()));
+  return found || text.split("\n").find(Boolean) || "";
+}
+
+function simulateExtract(text) {
+  return simulatedRules
+    .map((rule) => {
+      const matches = text.match(rule.match) || [];
+      if (!matches.length) {
+        return null;
+      }
+      return {
+        ...rule,
+        count: matches.length,
+        example: sentenceFor(text, rule.phrase),
+      };
+    })
+    .filter(Boolean);
+}
+
+function renderCandidates(candidates) {
+  if (!candidates.length) {
+    elements.candidateList.innerHTML = `<div class="empty">没有生成候选。真实提取会在后续接入本地模型和 Skill。</div>`;
+    elements.confirmCandidates.disabled = true;
+    return;
+  }
+
+  elements.candidateList.innerHTML = candidates
+    .map(
+      (candidate) => `
+        <article class="candidate-card">
+          <span>${candidate.kind === "word" ? "单词" : "短句"} · ${candidate.count} 次</span>
+          <strong>${escapeHtml(candidate.phrase)}</strong>
+          <p>${escapeHtml(candidate.meaning)}</p>
+          <p class="example">${escapeHtml(candidate.example)}</p>
+        </article>
+      `,
+    )
+    .join("");
+  elements.confirmCandidates.disabled = false;
 }
 
 async function loadKnowledge() {
@@ -106,13 +212,12 @@ async function loadKnowledge() {
     const payload = await response.json();
     state.payload = payload;
     state.cards = payload.cards || [];
-    state.filteredCards = state.cards;
     updateSummary(payload);
-    elements.skillContent.textContent = payload.skill?.content || "暂无 Skill 内容";
-    renderCards(state.filteredCards);
+    elements.ruleEditor.value = payload.skill?.content || "暂无 Skill 内容";
+    renderCards(state.cards);
   } catch (error) {
     elements.generatedAt.textContent = "未找到导出数据";
-    elements.skillContent.textContent = "请先本地运行 python3 scripts/process.py 生成 public/knowledge.json。";
+    elements.ruleEditor.value = "请先本地运行 python3 scripts/process.py 生成 public/knowledge.json。";
     elements.cardList.innerHTML = `
       <div class="empty">
         未能读取 <code>public/knowledge.json</code>。请先运行本地处理脚本，然后 push 到 GitHub。
@@ -121,7 +226,34 @@ async function loadKnowledge() {
   }
 }
 
+elements.tabs.forEach((tab) => {
+  tab.addEventListener("click", () => setTab(tab.dataset.tab));
+});
+
 elements.searchInput.addEventListener("input", applyFilters);
 elements.kindFilter.addEventListener("change", applyFilters);
 
+elements.fillDemo.addEventListener("click", () => {
+  elements.sourceTitle.value = "Demo work conversation";
+  elements.sourceText.value = demoText;
+});
+
+elements.extractForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const text = elements.sourceText.value.trim();
+  if (!text) {
+    renderCandidates([]);
+    return;
+  }
+  renderCandidates(simulateExtract(text));
+});
+
+elements.confirmCandidates.addEventListener("click", () => {
+  elements.confirmCandidates.textContent = "一期需由本地脚本入库";
+  window.setTimeout(() => {
+    elements.confirmCandidates.textContent = "确认并同步到知识库";
+  }, 1800);
+});
+
+setTab("knowledge");
 loadKnowledge();

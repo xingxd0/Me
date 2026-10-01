@@ -11,39 +11,40 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-grid"></div>
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="拾语首页">
-        <span class="brand-mark"></span>
-        <span>拾语</span>
-      </a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#knowledge">知识库</a>
-        <a href="#pipeline">运行链路</a>
-        <a href="#skill">当前 Skill</a>
-      </nav>
-      <span class="status-pill">GitHub 数据 · 本地处理 · 静态展示</span>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">PERSONAL EXPRESSION SYSTEM</p>
-          <h1>进步，始于表达。</h1>
-          <p class="lead">
-            把日常对话和文章沉淀为英语短句、单词与真实语境。数据保存在 GitHub，本地模型按 Skill 处理，网页只负责展示知识库。
-          </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="#knowledge">查看知识库</a>
-            <a class="secondary-action" href="#pipeline">查看运行链路</a>
-          </div>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#knowledge" aria-label="拾语首页">
+          <span class="brand-mark"></span>
+          <span>
+            <strong>拾语</strong>
+            <small>PHRASEBOOK</small>
+          </span>
+        </a>
+        <nav class="side-nav" aria-label="主导航">
+          <button class="active" type="button" data-tab="knowledge">知识库</button>
+          <button type="button" data-tab="extract">文字提取</button>
+          <button type="button" data-tab="rules">提取规则</button>
+        </nav>
+        <div class="side-note">
+          <span class="dot"></span>
+          <span>一期为静态框架：网页展示和模拟提交，本地脚本负责真实处理。</span>
         </div>
-        <aside class="hero-panel" aria-label="系统状态">
-          <div class="panel-header">
-            <span>PROCESS STATUS</span>
+      </aside>
+
+      <main class="workspace">
+        <header class="workspace-header">
+          <div>
+            <p id="workspaceEyebrow" class="eyebrow">KNOWLEDGE BASE</p>
+            <h1 id="workspaceTitle">知识库</h1>
+          </div>
+          <div class="sync-state">
+            <span>GitHub 数据</span>
             <strong id="generatedAt">等待数据</strong>
           </div>
-          <div class="metric-grid">
+        </header>
+
+        <section class="tab-panel active" data-panel="knowledge">
+          <section class="summary-grid" aria-label="知识库统计">
             <div>
               <span>沉淀表达</span>
               <strong id="cardCount">0</strong>
@@ -60,56 +61,128 @@
               <span>已掌握</span>
               <strong id="masteredCount">0</strong>
             </div>
-          </div>
-        </aside>
-      </section>
+          </section>
 
-      <section id="knowledge" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">KNOWLEDGE BASE</p>
-          <h2>知识库</h2>
-          <p>这里展示本地处理后 push 到 GitHub 的表达卡片。</p>
-        </div>
-        <div class="toolbar">
-          <input id="searchInput" type="search" placeholder="搜索表达、中文含义或来源..." />
-          <select id="kindFilter" aria-label="表达类型">
-            <option value="all">全部类型</option>
-            <option value="phrase">短句</option>
-            <option value="word">单词</option>
-          </select>
-        </div>
-        <div id="cardList" class="cards"></div>
-      </section>
+          <section id="knowledge" class="panel">
+            <div class="panel-title">
+              <div>
+                <h2>表达卡片</h2>
+                <p>首页只展示已经沉淀的单词和短句卡片。</p>
+              </div>
+              <span class="readonly-badge">知识库视图</span>
+            </div>
+            <div class="toolbar">
+              <input id="searchInput" type="search" placeholder="搜索表达、中文含义或来源..." />
+              <select id="kindFilter" aria-label="表达类型">
+                <option value="all">全部类型</option>
+                <option value="phrase">短句</option>
+                <option value="word">单词</option>
+              </select>
+            </div>
+            <div id="cardList" class="cards"></div>
+          </section>
+        </section>
 
-      <section id="pipeline" class="section split">
-        <div class="section-heading">
-          <p class="eyebrow">LOCAL PIPELINE</p>
-          <h2>运行链路</h2>
-          <p>第一版先不在网页提交内容，所有输入和处理都通过 GitHub 与本地脚本完成。</p>
-        </div>
-        <ol class="steps">
-          <li>把文章或对话放入 <code>content/inbox</code>。</li>
-          <li>本地执行 <code>python3 scripts/process.py</code>。</li>
-          <li>脚本读取 <code>skills/current.md</code> 并生成卡片。</li>
-          <li>结果写入 <code>data</code> 和 <code>public/knowledge.json</code>。</li>
-          <li>提交并 push 到 GitHub，网站自动展示最新知识库。</li>
-        </ol>
-      </section>
+        <section class="tab-panel" data-panel="extract">
+          <section class="extract-layout">
+            <article class="panel">
+              <div class="panel-title">
+                <div>
+                  <h2>输入文字</h2>
+                  <p>粘贴文章或对话，选择规则后提交。静态网页一期只搭建框架，不直接回写 GitHub。</p>
+                </div>
+                <span class="readonly-badge">框架占位</span>
+              </div>
+              <form id="extractForm" class="extract-form">
+                <label>
+                  <span>来源标题</span>
+                  <input id="sourceTitle" type="text" placeholder="例如：今天的工作沟通" />
+                </label>
+                <label>
+                  <span>提取规则</span>
+                  <select id="ruleSelect">
+                    <option value="current">v1 · 当前 Skill</option>
+                  </select>
+                </label>
+                <label>
+                  <span>正文内容</span>
+                  <textarea id="sourceText" rows="12" placeholder="粘贴文章、聊天记录或会议内容..."></textarea>
+                </label>
+                <div class="form-actions">
+                  <button class="primary-button" type="submit">提交并生成结果</button>
+                  <button class="secondary-button" type="button" id="fillDemo">填入示例</button>
+                </div>
+              </form>
+            </article>
 
-      <section id="skill" class="section split">
-        <div class="section-heading">
-          <p class="eyebrow">CURRENT SKILL</p>
-          <h2>当前规则</h2>
-          <p>Skill 可以持续版本化，后续本地模型会严格按这里的规则分析内容。</p>
-        </div>
-        <pre id="skillContent" class="skill-box">正在读取 Skill...</pre>
-      </section>
-    </main>
+            <article class="panel">
+              <div class="panel-title">
+                <div>
+                  <h2>结果确认</h2>
+                  <p>提交后进入候选结果。确认入库在一期显示为流程占位。</p>
+                </div>
+              </div>
+              <div id="candidateList" class="candidate-list">
+                <div class="empty">候选卡片会显示在这里。</div>
+              </div>
+              <button id="confirmCandidates" class="primary-button full-width" type="button" disabled>
+                确认并同步到知识库
+              </button>
+              <p class="hint">一期静态页面无法直接写入 GitHub；真实入库由本地脚本处理后 push 完成。</p>
+            </article>
+          </section>
+        </section>
 
-    <footer class="footer">
-      <span>xxd-design.com</span>
-      <span>Static display for a local-first expression knowledge system.</span>
-    </footer>
+        <section class="tab-panel" data-panel="rules">
+          <section class="rules-layout">
+            <article class="panel rule-list-panel">
+              <div class="panel-title">
+                <div>
+                  <h2>提取规则</h2>
+                  <p>规则可版本化，后续点击规则进行编辑。</p>
+                </div>
+              </div>
+              <div id="ruleList" class="rule-list">
+                <button class="rule-item active" type="button">
+                  <strong>v1 · 当前 Skill</strong>
+                  <span>用于日常对话和文章的英语表达提取</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="panel rule-editor-panel">
+              <div class="panel-title">
+                <div>
+                  <h2>编辑规则</h2>
+                  <p>这里展示当前规则内容。静态网页一期不直接保存，后续接入本地保存或 GitHub 提交流程。</p>
+                </div>
+                <span class="readonly-badge">编辑框架</span>
+              </div>
+              <textarea id="ruleEditor" class="rule-editor" rows="18">正在读取 Skill...</textarea>
+              <div class="form-actions">
+                <button class="primary-button" type="button" disabled>保存为新版本</button>
+                <button class="secondary-button" type="button" disabled>导出 Skill.md</button>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section class="panel workflow-note">
+            <div class="panel-title">
+              <div>
+                <h2>实际处理链路</h2>
+                <p>当前版本的真实数据更新仍通过本地脚本完成。</p>
+              </div>
+            </div>
+            <ol class="steps">
+              <li>把文章放入 <code>content/inbox</code></li>
+              <li>本地运行 <code>python3 scripts/process.py</code></li>
+              <li>生成 <code>public/knowledge.json</code></li>
+              <li>提交并 push 到 GitHub，网页读取最新知识库</li>
+            </ol>
+        </section>
+      </main>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
