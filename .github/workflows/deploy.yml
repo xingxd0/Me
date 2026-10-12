@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Cyberpunk V1 to GitHub Pages
 
 on:
   push:
@@ -18,39 +18,29 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          registry-url: https://registry.npmjs.org
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build site
-        run: npm run build
-
+      - name: Prepare static site
+        run: |
+          mkdir -p dist/instant
+          cp -R public/instant/. dist/instant/
+          cp public/instant/index.html dist/index.html
+          cp -R public/instant/assets dist/assets
+          cp public/CNAME dist/CNAME
+          touch dist/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

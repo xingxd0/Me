@@ -1,3 +1,26 @@
+# Xudong — Cyberpunk V1
+
+当前 GitHub Pages 发布赛博朋克 V1 的静态作品集。
+
+- 站点：https://xxd-design.com/
+- 静态源码：`public/instant/index.html`
+- 透明肖像：`public/instant/assets/portrait-cutout.png`
+- 部署：推送 `main` 自动通过 GitHub Actions 上传静态文件到 GitHub Pages，无需安装依赖或运行 React 构建。
+- 首页：拍照、显影、逆向还原与横向浏览；About、四个项目、More。
+- 作品：仅 Semi Design System、TikTok Customer Service Platform、SoulNest、CollabAgents；桌面 hover、移动端点击显示照片背面的概要，「查看更多」打开官方获奖页面。
+- 项目封面当前为概念化视觉。关于我保留独立页面。
+- 首页滤镜作用于首屏与首页作品照片，作品 Tab 保持原色。
+- 原 React 管理与其他源代码仍保留，供后续开发；本次 Pages 产物仅包含静态作品集。
+
+## 官方作品链接
+
+1. https://ifdesign.com/de/winner-ranking/project/semi-design-system/762908
+2. https://ifdesign.com/de/winner-ranking/project/tiktok-customer-service-platform/762897
+3. https://www.red-dot.org/project/soulnest-digital-emotional-wellness-companion-84928
+4. https://thelondondesignawards.com/cn/winner-info.php?id=7870
+
+## 既有开发说明
+
 # Minimalist Designer Portfolio
 
 一个用于个人作品集展示的前端项目，包含：
@@ -85,16 +108,3 @@ npm run preview
 - 最后执行 `git add`、`git commit`、`git push`
 
 
-## 拍立得交互 Demo
-
-当前交互版本已同步到 [`public/instant/index.html`](public/instant/index.html)。
-
-- 本地启动现有项目后访问 `http://localhost:3000/instant/index.html`。
-- 该页面为自包含 HTML/CSS/JavaScript，Vite 构建时会作为静态文件复制到 `dist/instant/index.html`；也可直接打开 HTML 文件。
-- 首页支持首屏拍照、照片逐渐显影、连续移入横向照片列表，以及逆向滚动还原。
-- 手机支持纵向滚动和横向手势同步浏览；末尾 More 卡片点击或滑至末尾松手后进入作品 Tab。
-- About Me 是独立页面；作品卡片在手机点击、桌面 hover 时显示概要，通过「查看更多」进入详情。
-- 原色、暖调、黑白、褪色、冷调五种滤镜作用于首页和首页的作品照片；作品 Tab 和详情保持原色。
-- 当前作品为 Demo 示例，尚未完成真机视觉验证。
-
-同步时间：2026-10-12。当前线上交互预览：https://xudong-instant-moments.famousclock5.chatgpt.site
