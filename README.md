@@ -8,7 +8,8 @@
 - 部署：推送 `main` 自动通过 GitHub Actions 上传静态文件到 GitHub Pages，无需安装依赖或运行 React 构建。
 - 首页：拍照、显影、逆向还原与横向浏览；About、四个项目、More。
 - 作品：仅 Semi Design System、TikTok Customer Service Platform、SoulNest、CollabAgents；桌面 hover、移动端点击显示照片背面的概要，「查看更多」打开官方获奖页面。
-- 项目封面当前为概念化视觉。关于我保留独立页面。
+- 项目封面使用官方项目图与奖项 Logo；Customer Service 使用设计团队发布的视频封面。关于我保留独立页面。
+- 素材出处见 `public/instant/assets/cover-sources.json`。
 - 首页滤镜作用于首屏与首页作品照片，作品 Tab 保持原色。
 - 原 React 管理与其他源代码仍保留，供后续开发；本次 Pages 产物仅包含静态作品集。
 
