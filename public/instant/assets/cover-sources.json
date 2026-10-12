@@ -22,5 +22,15 @@
     "if": "User supplied image(5).png",
     "red_dot": "https://www.red-dot.org/fileadmin/_processed_/4/e/csm_2025_bc_rd_13bf5aee10.png",
     "london_gold": "https://thelondondesignawards.com/upload/winner/1734951966winner_11.png"
+  },
+  "approved_covers": {
+    "note": "AI-composed project screenshots and award marks approved by user; Semi uses final orthographic revision.",
+    "files": [
+      "semi",
+      "service",
+      "soulnest",
+      "collabagents"
+    ],
+    "order": "Semi (iF), Customer Service (iF), SoulNest (Red Dot), CollabAgents (London Design Awards)"
   }
 }
