@@ -6,8 +6,9 @@
 - 静态源码：`public/instant/index.html`
 - 透明肖像：`public/instant/assets/portrait-cutout.png`
 - 部署：推送 `main` 自动通过 GitHub Actions 上传静态文件到 GitHub Pages，无需安装依赖或运行 React 构建。
-- 首页：拍照、显影、逆向还原与横向浏览；About、四个项目、More。
-- 作品：仅 Semi Design System、TikTok Customer Service Platform、SoulNest、CollabAgents；桌面 hover、移动端点击显示照片背面的概要，「查看更多」打开官方获奖页面。
+- 首页：拍照、显影、逆向还原与横向浏览；About、五个项目、More。
+- 作品：按 TMates、Semi Design System、TikTok Customer Service Platform、SoulNest、CollabAgents 排序；桌面 hover、移动端点击显示照片背面的概要，「查看更多」打开官方获奖页面。
+- TMates 封面使用用户提供的原始附件 `public/instant/assets/tmates-cover.jpg`，未重绘或重新压缩。
 - Semi 与 Customer Service 封面使用用户提供的项目截图，叠放用户提供的 iF 2026 Logo；其余项目使用官方项目图与奖项 Logo。关于我保留独立页面。
 - 素材出处见 `public/instant/assets/cover-sources.json`。
 - 首页滤镜作用于首屏与首页作品照片，作品 Tab 保持原色。
@@ -15,10 +16,11 @@
 
 ## 官方作品链接
 
-1. https://ifdesign.com/de/winner-ranking/project/semi-design-system/762908
-2. https://ifdesign.com/de/winner-ranking/project/tiktok-customer-service-platform/762897
-3. https://www.red-dot.org/project/soulnest-digital-emotional-wellness-companion-84928
-4. https://thelondondesignawards.com/cn/winner-info.php?id=7870
+1. https://www.red-dot.org/project/tmates-92928
+2. https://ifdesign.com/de/winner-ranking/project/semi-design-system/762908
+3. https://ifdesign.com/de/winner-ranking/project/tiktok-customer-service-platform/762897
+4. https://www.red-dot.org/project/soulnest-digital-emotional-wellness-companion-84928
+5. https://thelondondesignawards.com/cn/winner-info.php?id=7870
 
 ## 既有开发说明
 
@@ -107,5 +109,4 @@ npm run preview
 - 日常编辑在本地 `admin` 完成
 - 确认内容无误后导出并覆盖正式 JSON
 - 最后执行 `git add`、`git commit`、`git push`
-
 
